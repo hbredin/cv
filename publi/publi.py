@@ -1,5 +1,20 @@
+from argparse import ArgumentParser
 import bibparse
 import sys
+
+argparser = ArgumentParser(description='A tool to generate publication list')
+
+argparser.add_argument('--english', action='store_true',
+                       help="Generate english version")
+
+argparser.add_argument('--francais', action='store_true',
+                       help="Produire la version francaise")
+
+args = argparser.parse_args()
+
+if args.english == args.francais:
+    sys.stderr.write("You must choose between 'english' and 'francais'\n")
+    sys.exit()
 
 # parse bib file
 papers = bibparse.parse_bib('bredin.bib')
@@ -11,15 +26,27 @@ for btype in btypes:
     subpapers[btype] = [paper.key for paper in papers if paper.btype == btype]
 
 order = ['article', 'inbook', 'inproceedings', 'phdthesis']
-titles = {'inproceedings': 'Conference and workshop proceedings',
-          'article': 'Journal articles',
-          'inbook': 'Book chapters',
-          'phdthesis': 'PhD thesis',
-          'wtf': 'Other publications'}
+
+if args.english:
+    titles = {'inproceedings': 'Conference and workshop proceedings',
+              'article': 'Journal articles',
+              'inbook': 'Book chapters',
+              'phdthesis': 'PhD thesis',
+              'wtf': 'Other publications'}
+else:
+    titles = {'inproceedings': "Actes de conf\\'{e}rences et ateliers",
+              'article': "Articles de journaux",
+              'inbook': "Chapitres d'ouvrages",
+              'phdthesis': "Th\`{e}se",
+              'wtf': "Autres publications"}
+    
 subpapers['wtf'] = [paper.key for paper in papers if paper.btype not in order]
 order.append('wtf')
 
-f = open('publi.tex', 'w')
+if args.english:
+    f = open('publi_EN.tex', 'w')
+else:
+    f = open('publi_FR.tex', 'w')
 
 f.write('\\documentclass{simplecv}\n')
 f.write('\\usepackage[margin=1.5in]{geometry}\n')
@@ -53,7 +80,13 @@ f.write('\\maketitle\n')
 from datetime import date
 f.write('\\vspace{-1cm}\n')
 f.write('\\begin{center}\n')
-f.write('(last updated on %s)\n' % date.today().strftime("%B %d, %Y"))
+if args.english:
+    f.write('(last updated on %s)\n' % date.today().strftime("%B %d, %Y"))
+else:
+    import locale
+    locale.setlocale(locale.LC_ALL, '')
+    f.write('(derni\`{e}re mise \`{a} jour le %s)\n' % date.today().strftime(" %d %B %Y"))
+
 f.write('\\end{center}\n')
 
 for btype in order:
