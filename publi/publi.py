@@ -28,7 +28,11 @@ f.write('\\usepackage[square, numbers, sort]{natbib}\n')
 f.write('\\usepackage{multibib}\n')
 
 for btype in order:
-    f.write('\\newcites{%s}{%s}\n' % (btype, titles[btype]))
+    n = len(subpapers[btype])
+    if n > 1:
+        f.write('\\newcites{%s}{%s (%d)}\n' % (btype, titles[btype], n))
+    else:
+        f.write('\\newcites{%s}{%s}\n' % (btype, titles[btype]))
 
 f.write('\\begin{document}\n')
 f.write('\\pagestyle{empty}\n')
@@ -45,9 +49,11 @@ f.write("\\title{Herv\\'{e} Bredin -- Publications}\n")
 
 f.write('\\maketitle\n')
 
+# (last updated on ...)
+from datetime import date
 f.write('\\vspace{-1cm}\n')
 f.write('\\begin{center}\n')
-f.write('(last updated on July 22nd, 2012)\n')
+f.write('(last updated on %s)\n' % date.today().strftime("%B %d, %Y"))
 f.write('\\end{center}\n')
 
 for btype in order:
