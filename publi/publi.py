@@ -1,44 +1,6 @@
 import bibparse
 import sys
 
-# def print_tab_title(title, papers):
-#     href = ''.join(title.split())
-#     sys.stdout.write('<li><a href="#%s" data-toggle="tab">%s (%d)</a></li>\n' % (href, title, len(papers)))
-# 
-# def print_tab_content(title, papers, active=False):
-#     previous_year = ''
-#     href = ''.join(title.split())
-#     papers = reversed(sorted(papers, key=lambda paper: int(paper.data['Year'])))
-#     if active:
-#         sys.stdout.write('<div class="tab-pane fade in active" id="%s">\n' % href)
-#     else:
-#         sys.stdout.write('<div class="tab-pane fade in" id="%s">\n' % href)
-#     sys.stdout.write('<div class="accordion" id="accordion%s">\n' % href)
-#     for paper in papers:
-#         if paper.data['Year'] != previous_year:
-#             sys.stdout.write('<h3>%s</h3>\n' % paper.data['Year'])
-#             previous_year = paper.data['Year']
-#         sys.stdout.write('<div class="accordion-group">\n')
-#         sys.stdout.write('    <div class="accordion-heading">\n')
-#         sys.stdout.write('        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion%s" href="#collapse%s_%s">\n' % (href, paper.key, href))
-#         sys.stdout.write('        %s\n' % paper.data['Title'])
-#         sys.stdout.write('        </a>\n')
-#         sys.stdout.write('    </div>\n')
-#         sys.stdout.write('    <div id="collapse%s_%s" class="accordion-body collapse">\n' % (paper.key, href))
-#         sys.stdout.write('        <div class="accordion-inner">\n')
-#         sys.stdout.write('        %s\n' % ', '.join(paper.data['Author'].split(' and ')))
-#         if 'Booktitle' in paper.data:
-#             sys.stdout.write('<p><em>%s</em></p>\n' % paper.data['Booktitle'])
-#         if 'Journal' in paper.data:
-#             sys.stdout.write('<p><em>%s</em></p>\n' % paper.data['Journal'])
-#         if 'Abstract' in paper.data:
-#             sys.stdout.write('<blockquote><p>%s</p></blockquote>\n' % paper.data['Abstract'])
-#         sys.stdout.write('        </div>\n')
-#         sys.stdout.write('    </div>\n')
-#         sys.stdout.write('</div>\n')
-#     sys.stdout.write('</div>\n')
-#     sys.stdout.write('</div>\n')
-
 # parse bib file
 papers = bibparse.parse_bib('bredin.bib')
 # get publication types
@@ -83,9 +45,9 @@ f.write("\\title{Herv\\'{e} Bredin -- Publications}\n")
 
 f.write('\\maketitle\n')
 
-
+f.write('\\vspace{-1cm}\n')
 f.write('\\begin{center}\n')
-f.write('Last updated on July 22nd, 2012.\n')
+f.write('(last updated on July 22nd, 2012)\n')
 f.write('\\end{center}\n')
 
 for btype in order:
