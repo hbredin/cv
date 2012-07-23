@@ -1,3 +1,34 @@
+@inproceedings{Delezoide2012,
+  Title = {{IRIM} at {TRECVID} 2011: {S}emantic {I}ndexing and {I}nstance {S}earch},
+  Author = {Bertrand Delezoide and Fr\'ed\'eric Precioso and Philippe Gosselin and Miriam Redi and Bernard M\'erialdo and Lionel Granjon and Denis Pellerin and Mich\`ele Rombaut and Herv\'e J\'egou and R\'emi Vieux and Boris Mansencal and Jenny Benois-Pineau and St\'ephane Ayache and Bahjat Safadi and Franck Thollard and Georges Qu\'enot and Herv\'e Bredin and Matthieu Cord and Alexandre Benoit and Patrick Lambert and Tiberius Strat and Joseph Razik and S\'ebastion Paris and Herv\'e Glotin},
+  Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes its participation to the TRECVID 2011 semantic indexing and instance search tasks. For the semantic indexing task, our approach uses a six-stages processing pipelines for computing scores for the likelihood of a video shot to contain a target concept. These scores are then used for producing a ranked list of images or shots that are the most likely to contain the target concept. The pipeline is composed of the following steps: descriptor extraction, descriptor optimization, classification, fusion of descriptor variants, higher-level fusion, and re-ranking. We evaluated a number of different descriptors and tried different fusion strategies. The best IRIM run has a Mean Inferred Average Precision of 0.1387, which ranked us 5th out of 19 participants. For the instance search task, we we used both object based query and frame based query. We formulated the query in standard way as comparison of visual signatures either of object with parts of DB frames or as a comparison of visual signatures of query and DB frames. To produce visual signatures we also used two apporaches: the first one is the baseline Bag-Of-Visual-Words (BOVW) model based on SURF interest point descriptor; the second approach is a Bag-Of-Regions (BOR) model that extends the traditional notion of BOVW vocabulary not only to keypoint-based descriptors but to region based descriptors.},
+  Year = {2012},
+  Booktitle = {TRECVid 2011, TREC Video Retrieval Evaluation Online Proceedings},
+}
+
+@inproceedings{Gorisse2011,
+  Title = {{IRIM} at {TRECVID} 2010: {S}emantic {I}ndexing and {I}nstance {S}earch},
+  Author = {David Gorisse and Fr\'ed\'eric Precioso and Philippe Gosselin, Lionel Granjon and Denis Pellerin and Mich\`ele Rombaut and Herv\'e Bredin and Lionel Koenig and R\'emi Vieux and Boris Mansencal and Jenny Benois-Pineau and Hugo Boujut and Claire Morand and Herv\'e J\'egou and St\'ephane Ayache and Bahjat Safadi and Yubing Tong and Franck Thollard and Georges Qu\'enot and Matthieu Cord and Alexandre Beno\^it and Patrick Lambert},
+  Year = {2011},
+  Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes our participation to the TRECVID 2010 semantic indexing and instance search tasks. For the semantic indexing task, we evaluated a number of different descriptors and tried different fusion strategies, in particular hierarchical fusion. The best IRIM run has a Mean Inferred Average Precision of 0.0442, which is above the task median performance. We found that fusion of the classification scores from different classifier types improves the performance and that even with a quite low individual performance, audio descriptors can help. For the instance search task, we used only one of the example images in our queries. The rank is nearly in the middle of the list of participants. The experiment showed that HSV features outperform the concatenation of HSV and Edge histograms or the Wavelet features.},
+  Booktitle = {TRECVid 2010, TREC Video Retrieval Evaluation Online Proceedings},
+}
+
+
+@inproceedings{Delezoide2010,
+    Title = {{IRIM} at {TRECVID} 2009: {H}igh {L}evel {F}eature {E}xtraction},
+    Author = {Delezoide, Bertrand and Le Borgne, Herv{\'e} and Mo{\"e}llic, Pierre-Alain and Gorisse, David and Precioso, Fr{\'e}d{\'e}ric and Wang, Feng and Merialdo, Bernard and Gosselin, Philippe and Granjon, Lionel and Pellerin, Denis and Rombaut, Mich{\`e}le and Bredin, Herv{\'e} and Koenig, Lionel and Lachambre, H{\'e}l{\`e}ne and El Khoury, Elie and Mansencal, Boris and Zhou, Yifan and Benois-Pineau, Jenny and J{\'e}gou, Herv{\'e} and Ayache, St{\'e}phane and Safadi, Bahjat and Quenot, Georges and Fabrizio, Jonathan and Cord, Matthieu and Glotin, Herv{\'e} and Zhao, Zhongqiu and Dumont, Emilie and Augereau, Bertrand},
+    Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes our participation to the TRECVID 2009 High Level Features detection task. We evaluated a large number of different descriptors (on TRECVID 2008 data) and tried different fusion strategies, in particular hierarchical fusion and genetic fusion. The best IRIM run has a Mean Inferred Average Precision of 0.1220, which is significantly above TRECVID 2009 HLF detection task median performance. We found that fusion of the classification scores from different classifier types improves the performance and that even with a quite low individual performance, audio descriptors can help.},
+  Booktitle = {TRECVid 2009, TREC Video Retrieval Evaluation Online Proceedings},
+    Year = {2010},
+}
+
+@inproceedings{Bredin2010,
+  Title = {{IRIT} at {TRECVID} {HLF} 2009: {A}udio to the {R}escue},
+  Author = {Herv\'e Bredin and Lionel Koenig and H\'el\`ene Lachambre and Elie El Khoury},
+  Booktitle = {TRECVid 2009, TREC Video Retrieval Evaluation Online Proceedings},
+  Year = {2010},
+}
 
 @article{Ercolessi2012a,
 	Abstract = {Modern TV series have complex plots made of several intertwined stories following numerous characters. In this paper, we propose an approach for automatically detecting these stories in order to generate video summaries and we propose a visualization tool to have a quick and easy look at TV series. Based on automatic scene segmentation of each TV series episode (a scene is defined as temporally and spatially continuous and semantically coherent), scenes are clustered into stories, made of (non necessarily adjacent) semantically similar scenes. Visual, audio and text modalities are combined to achieve better scene segmentation and story detection performance. An extraction of salient scenes from stories is performed to create the summary. Experimentations are conducted on two TV series with different formats.},
