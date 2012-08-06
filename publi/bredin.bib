@@ -1,22 +1,9 @@
-@inproceedings{Strat2012,
-	Title = {{H}ierarchical {L}ate {F}usion for {C}oncept {D}etection in {V}ideos},
-	Author = {Tiberius Strat and Alexandre Benoit and Herv\'e Bredin and Georges  Qu\'enot and Patrick  Lambert},
-	Booktitle = {ECCV 2012, Workshop on Information Fusion in Computer Vision for Concept Recognition},
-	Abstract = {We deal with the issue of combining dozens of classifiers into a better one, for concept detection in videos. We compare three fusion approaches that share a common structure: they all start with a classifier clustering stage, continue with an intra-cluster fusion and end with an inter-cluster fusion. The main difference between them comes from the first stage. The first approach relies on a priori knowledge about the internals of each classifier (low-level descriptors and classification algorithm) to group the set of available classifiers by similarity. The second and third approaches obtain classifier similarity measures directly from their output and group them using agglomerative clustering for the second approach and community detection for the third one.},
+@article{Ercolessi2012a,
+	Abstract = {Modern TV series have complex plots made of several intertwined stories following numerous characters. In this paper, we propose an approach for automatically detecting these stories in order to generate video summaries and we propose a visualization tool to have a quick and easy look at TV series. Based on automatic scene segmentation of each TV series episode (a scene is defined as temporally and spatially continuous and semantically coherent), scenes are clustered into stories, made of (non necessarily adjacent) semantically similar scenes. Visual, audio and text modalities are combined to achieve better scene segmentation and story detection performance. An extraction of salient scenes from stories is performed to create the summary. Experimentations are conducted on two TV series with different formats.},
+	Author = {Philippe Ercolessi and Christine S\'{e}nac and Herv\'{e} Bredin and Sandrine Mouysset},
+	Journal = {Document Num\'{e}rique -- Num\'{e}ro Sp\'{e}cial ``R\'{e}sum\'{e} Automatique des Documents''},
+	Title = {{V}ers un {R}\'{e}sum\'{e} {A}utomatique de {S}\'{e}ries {T}\'{e}l\'{e}vis\'{e}es bas\'{e} sur une {R}echerche {M}ultimodale d'{H}istoires},
 	Year = {2012},
-	Month = {October},
-	Address = {Firenze, Italy},
-}
-
-
-@inproceedings{Bredin2012b,
-	Title = {{F}usion of {S}peech, {F}aces and {T}ext for {P}erson {I}dentification in {TV} {B}roadcast},
-	Author = {Herv\'e Bredin and Johann Poignant and Makarand Tapaswi and Guillaume Fortier and Viet Bac Le and Thibault Napoleon and Hua Gao and Claude Barras and Sophie Rosset and Laurent Besacier and Jakob Verbeek and Georges Qu\'enot and Fr\'ed\'eric Jurie and Hazim Kemal Ekenel},
-	Booktitle = {ECCV 2012, Workshop on Information Fusion in Computer Vision for Concept Recognition},
-	Abstract = {The REPERE challenge is a project aiming at the evaluation of systems for supervised and unsupervised multimodal recognition of people in TV broadcast. In this paper, we describe, evaluate and discuss QCompere consortium submissions to the 2012 \repere evaluation campaign dry-run. Speaker identification (and face recognition) can be greatly improved when combined with name detection through video optical character recognition. Moreover, we show that unsupervised multimodal person recognition systems can achieve performance nearly as good as supervised monomodal ones (with several hundreds of identity models).},
-	Year = {2012},
-	Month = {October},
-	Address = {Firenze, Italy},
 }
 
 @inproceedings{Ercolessi2012c,
@@ -39,45 +26,24 @@
 	Address = {Nara, Japan},
 }
 
-
-@inproceedings{Delezoide2012,
-  Title = {{IRIM} at {TRECVID} 2011: {S}emantic {I}ndexing and {I}nstance {S}earch},
-  Author = {Bertrand Delezoide and Fr\'ed\'eric Precioso and Philippe Gosselin and Miriam Redi and Bernard M\'erialdo and Lionel Granjon and Denis Pellerin and Mich\`ele Rombaut and Herv\'e J\'egou and R\'emi Vieux and Boris Mansencal and Jenny Benois-Pineau and St\'ephane Ayache and Bahjat Safadi and Franck Thollard and Georges Qu\'enot and Herv\'e Bredin and Matthieu Cord and Alexandre Benoit and Patrick Lambert and Tiberius Strat and Joseph Razik and S\'ebastion Paris and Herv\'e Glotin},
-  Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes its participation to the TRECVID 2011 semantic indexing and instance search tasks. For the semantic indexing task, our approach uses a six-stages processing pipelines for computing scores for the likelihood of a video shot to contain a target concept. These scores are then used for producing a ranked list of images or shots that are the most likely to contain the target concept. The pipeline is composed of the following steps: descriptor extraction, descriptor optimization, classification, fusion of descriptor variants, higher-level fusion, and re-ranking. We evaluated a number of different descriptors and tried different fusion strategies. The best IRIM run has a Mean Inferred Average Precision of 0.1387, which ranked us 5th out of 19 participants. For the instance search task, we we used both object based query and frame based query. We formulated the query in standard way as comparison of visual signatures either of object with parts of DB frames or as a comparison of visual signatures of query and DB frames. To produce visual signatures we also used two apporaches: the first one is the baseline Bag-Of-Visual-Words (BOVW) model based on SURF interest point descriptor; the second approach is a Bag-Of-Regions (BOR) model that extends the traditional notion of BOVW vocabulary not only to keypoint-based descriptors but to region based descriptors.},
-  Year = {2012},
-  Booktitle = {TRECVid 2011, TREC Video Retrieval Evaluation Online Proceedings},
-}
-
-@inproceedings{Gorisse2011,
-  Title = {{IRIM} at {TRECVID} 2010: {S}emantic {I}ndexing and {I}nstance {S}earch},
-  Author = {David Gorisse and Fr\'ed\'eric Precioso and Philippe Gosselin, Lionel Granjon and Denis Pellerin and Mich\`ele Rombaut and Herv\'e Bredin and Lionel Koenig and R\'emi Vieux and Boris Mansencal and Jenny Benois-Pineau and Hugo Boujut and Claire Morand and Herv\'e J\'egou and St\'ephane Ayache and Bahjat Safadi and Yubing Tong and Franck Thollard and Georges Qu\'enot and Matthieu Cord and Alexandre Beno\^it and Patrick Lambert},
-  Year = {2011},
-  Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes our participation to the TRECVID 2010 semantic indexing and instance search tasks. For the semantic indexing task, we evaluated a number of different descriptors and tried different fusion strategies, in particular hierarchical fusion. The best IRIM run has a Mean Inferred Average Precision of 0.0442, which is above the task median performance. We found that fusion of the classification scores from different classifier types improves the performance and that even with a quite low individual performance, audio descriptors can help. For the instance search task, we used only one of the example images in our queries. The rank is nearly in the middle of the list of participants. The experiment showed that HSV features outperform the concatenation of HSV and Edge histograms or the Wavelet features.},
-  Booktitle = {TRECVid 2010, TREC Video Retrieval Evaluation Online Proceedings},
-}
-
-
-@inproceedings{Delezoide2010,
-    Title = {{IRIM} at {TRECVID} 2009: {H}igh {L}evel {F}eature {E}xtraction},
-    Author = {Delezoide, Bertrand and Le Borgne, Herv{\'e} and Mo{\"e}llic, Pierre-Alain and Gorisse, David and Precioso, Fr{\'e}d{\'e}ric and Wang, Feng and Merialdo, Bernard and Gosselin, Philippe and Granjon, Lionel and Pellerin, Denis and Rombaut, Mich{\`e}le and Bredin, Herv{\'e} and Koenig, Lionel and Lachambre, H{\'e}l{\`e}ne and El Khoury, Elie and Mansencal, Boris and Zhou, Yifan and Benois-Pineau, Jenny and J{\'e}gou, Herv{\'e} and Ayache, St{\'e}phane and Safadi, Bahjat and Quenot, Georges and Fabrizio, Jonathan and Cord, Matthieu and Glotin, Herv{\'e} and Zhao, Zhongqiu and Dumont, Emilie and Augereau, Bertrand},
-    Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes our participation to the TRECVID 2009 High Level Features detection task. We evaluated a large number of different descriptors (on TRECVID 2008 data) and tried different fusion strategies, in particular hierarchical fusion and genetic fusion. The best IRIM run has a Mean Inferred Average Precision of 0.1220, which is significantly above TRECVID 2009 HLF detection task median performance. We found that fusion of the classification scores from different classifier types improves the performance and that even with a quite low individual performance, audio descriptors can help.},
-  Booktitle = {TRECVid 2009, TREC Video Retrieval Evaluation Online Proceedings},
-    Year = {2010},
-}
-
-@inproceedings{Bredin2010,
-  Title = {{IRIT} at {TRECVID} {HLF} 2009: {A}udio to the {R}escue},
-  Author = {Herv\'e Bredin and Lionel Koenig and H\'el\`ene Lachambre and Elie El Khoury},
-  Booktitle = {TRECVid 2009, TREC Video Retrieval Evaluation Online Proceedings},
-  Year = {2010},
-}
-
-@article{Ercolessi2012a,
-	Abstract = {Modern TV series have complex plots made of several intertwined stories following numerous characters. In this paper, we propose an approach for automatically detecting these stories in order to generate video summaries and we propose a visualization tool to have a quick and easy look at TV series. Based on automatic scene segmentation of each TV series episode (a scene is defined as temporally and spatially continuous and semantically coherent), scenes are clustered into stories, made of (non necessarily adjacent) semantically similar scenes. Visual, audio and text modalities are combined to achieve better scene segmentation and story detection performance. An extraction of salient scenes from stories is performed to create the summary. Experimentations are conducted on two TV series with different formats.},
-	Author = {Philippe Ercolessi and Christine S\'{e}nac and Herv\'{e} Bredin and Sandrine Mouysset},
-	Journal = {Document Num\'{e}rique -- Num\'{e}ro Sp\'{e}cial ``R\'{e}sum\'{e} Automatique des Documents''},
-	Title = {{V}ers un {R}\'{e}sum\'{e} {A}utomatique de {S}\'{e}ries {T}\'{e}l\'{e}vis\'{e}es bas\'{e} sur une {R}echerche {M}ultimodale d'{H}istoires},
+@inproceedings{Strat2012,
+	Title = {{H}ierarchical {L}ate {F}usion for {C}oncept {D}etection in {V}ideos},
+	Author = {Tiberius Strat and Alexandre Benoit and Herv\'e Bredin and Georges  Qu\'enot and Patrick  Lambert},
+	Booktitle = {ECCV 2012, Workshop on Information Fusion in Computer Vision for Concept Recognition},
+	Abstract = {We deal with the issue of combining dozens of classifiers into a better one, for concept detection in videos. We compare three fusion approaches that share a common structure: they all start with a classifier clustering stage, continue with an intra-cluster fusion and end with an inter-cluster fusion. The main difference between them comes from the first stage. The first approach relies on a priori knowledge about the internals of each classifier (low-level descriptors and classification algorithm) to group the set of available classifiers by similarity. The second and third approaches obtain classifier similarity measures directly from their output and group them using agglomerative clustering for the second approach and community detection for the third one.},
 	Year = {2012},
+	Month = {October},
+	Address = {Firenze, Italy},
+}
+
+@inproceedings{Bredin2012b,
+	Title = {{F}usion of {S}peech, {F}aces and {T}ext for {P}erson {I}dentification in {TV} {B}roadcast},
+	Author = {Herv\'e Bredin and Johann Poignant and Makarand Tapaswi and Guillaume Fortier and Viet Bac Le and Thibault Napoleon and Hua Gao and Claude Barras and Sophie Rosset and Laurent Besacier and Jakob Verbeek and Georges Qu\'enot and Fr\'ed\'eric Jurie and Hazim Kemal Ekenel},
+	Booktitle = {ECCV 2012, Workshop on Information Fusion in Computer Vision for Concept Recognition},
+	Abstract = {The REPERE challenge is a project aiming at the evaluation of systems for supervised and unsupervised multimodal recognition of people in TV broadcast. In this paper, we describe, evaluate and discuss QCompere consortium submissions to the 2012 \repere evaluation campaign dry-run. Speaker identification (and face recognition) can be greatly improved when combined with name detection through video optical character recognition. Moreover, we show that unsupervised multimodal person recognition systems can achieve performance nearly as good as supervised monomodal ones (with several hundreds of identity models).},
+	Year = {2012},
+	Month = {October},
+	Address = {Firenze, Italy},
 }
 
 @inproceedings{Poignant2012,
@@ -100,6 +66,16 @@
 	Year = {2012},
 }
 
+@inproceedings{Bredin2012a,
+	Abstract = {We deal with the issue of combining dozens of classifiers into a better one. Our first contribution is the introduction of the notion of communities of classifiers. We build a complete graph with one node per classifier and edges weighted by a measure of similarity between connected classifiers. The resulting community structure is uncovered from this graph using the state-of-the-art Louvain algorithm. Our second contribution is a hierarchical fusion approach driven by these communities. First, intra-community fusion results in one classifier per community. Then, inter-community fusion takes advantage of their complementarity to achieve much better classification performance. Application to the combination of 90 classifiers in the framework of TRECVid 2010 Semantic Indexing task shows a 30% increase in performance relative to a baseline flat fusion.},
+	Address = {Kyoto, Japan},
+	Author = {Herv{\'e} Bredin},
+	Booktitle = {ICASSP 2012, IEEE International Conference on Acoustics, Speech, and Signal Processing},
+	Month = {March},
+	Title = {{C}ommunity-driven {H}ierarchical {F}usion of {N}umerous {C}lassifiers: {A}pplication to {V}ideo {S}emantic {I}ndexing},
+	Year = {2012},
+}
+
 @inproceedings{Bredin2012,
 	Abstract = {We investigate the use of speaker diarization (SD) and automatic speech recognition (ASR) for the segmentation of audiovisual documents into scenes. We introduce multiple monomodal and multimodal approaches based on a state-of-the-art algorithm called generalized scene transition graph (GSTG). First, we extend the latter with the use of semantic information derived from both SD and ASR. Then, multimodal fusion of color histograms, SD and ASR is investigated at various point of the GSTG pipeline (early, late or intermediate fusion). Experiments driven on a few episodes of a popular TV show indicate that SD and ASR can be successfully combined with visual information and bring an additional +11% relative increase in terms of F-Measure for scene boundary detection over the state-of-the-art baseline.},
 	Address = {Kyoto, Japan},
@@ -110,13 +86,12 @@
 	Year = {2012},
 }
 
-@inproceedings{Bredin2007a,
-	Address = {Honolulu, Hawaii, USA},
-	Author = {Herv{\'e} Bredin and G{\'e}rard Chollet},
-	Booktitle = {ICASSP 2007, IEEE International Conference on Acoustics, Speech, and Signal Processing},
-	Month = {April},
-	Title = {{A}udio-{V}isual {S}peech {S}ynchrony {M}easure for {T}alking-{F}ace {I}dentity {V}erification},
-	Year = {2007},
+@inproceedings{Delezoide2012,
+  Title = {{IRIM} at {TRECVID} 2011: {S}emantic {I}ndexing and {I}nstance {S}earch},
+  Author = {Bertrand Delezoide and Fr\'ed\'eric Precioso and Philippe Gosselin and Miriam Redi and Bernard M\'erialdo and Lionel Granjon and Denis Pellerin and Mich\`ele Rombaut and Herv\'e J\'egou and R\'emi Vieux and Boris Mansencal and Jenny Benois-Pineau and St\'ephane Ayache and Bahjat Safadi and Franck Thollard and Georges Qu\'enot and Herv\'e Bredin and Matthieu Cord and Alexandre Benoit and Patrick Lambert and Tiberius Strat and Joseph Razik and S\'ebastion Paris and Herv\'e Glotin},
+  Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes its participation to the TRECVID 2011 semantic indexing and instance search tasks. For the semantic indexing task, our approach uses a six-stages processing pipelines for computing scores for the likelihood of a video shot to contain a target concept. These scores are then used for producing a ranked list of images or shots that are the most likely to contain the target concept. The pipeline is composed of the following steps: descriptor extraction, descriptor optimization, classification, fusion of descriptor variants, higher-level fusion, and re-ranking. We evaluated a number of different descriptors and tried different fusion strategies. The best IRIM run has a Mean Inferred Average Precision of 0.1387, which ranked us 5th out of 19 participants. For the instance search task, we we used both object based query and frame based query. We formulated the query in standard way as comparison of visual signatures either of object with parts of DB frames or as a comparison of visual signatures of query and DB frames. To produce visual signatures we also used two apporaches: the first one is the baseline Bag-Of-Visual-Words (BOVW) model based on SURF interest point descriptor; the second approach is a Bag-Of-Regions (BOR) model that extends the traditional notion of BOVW vocabulary not only to keypoint-based descriptors but to region based descriptors.},
+  Year = {2012},
+  Booktitle = {TRECVid 2011, TREC Video Retrieval Evaluation Online Proceedings},
 }
 
 @article{Ramona2011,
@@ -125,6 +100,38 @@
 	Journal = {Applied Artificial Intelligence},
 	Title = {{A} {P}ublic {A}udio {I}dentification {E}valuation {F}ramework for {B}roadcast {M}onitoring},
 	Year = {2011},
+}
+@inproceedings{Gorisse2011,
+  Title = {{IRIM} at {TRECVID} 2010: {S}emantic {I}ndexing and {I}nstance {S}earch},
+  Author = {David Gorisse and Fr\'ed\'eric Precioso and Philippe Gosselin, Lionel Granjon and Denis Pellerin and Mich\`ele Rombaut and Herv\'e Bredin and Lionel Koenig and R\'emi Vieux and Boris Mansencal and Jenny Benois-Pineau and Hugo Boujut and Claire Morand and Herv\'e J\'egou and St\'ephane Ayache and Bahjat Safadi and Yubing Tong and Franck Thollard and Georges Qu\'enot and Matthieu Cord and Alexandre Beno\^it and Patrick Lambert},
+  Year = {2011},
+  Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes our participation to the TRECVID 2010 semantic indexing and instance search tasks. For the semantic indexing task, we evaluated a number of different descriptors and tried different fusion strategies, in particular hierarchical fusion. The best IRIM run has a Mean Inferred Average Precision of 0.0442, which is above the task median performance. We found that fusion of the classification scores from different classifier types improves the performance and that even with a quite low individual performance, audio descriptors can help. For the instance search task, we used only one of the example images in our queries. The rank is nearly in the middle of the list of participants. The experiment showed that HSV features outperform the concatenation of HSV and Edge histograms or the Wavelet features.},
+  Booktitle = {TRECVid 2010, TREC Video Retrieval Evaluation Online Proceedings},
+}
+
+@inproceedings{Ercolessi2011,
+	Abstract = {In this paper, we propose a novel approach to perform scene segmentation of TV series. Using the output of our existing speaker diarization system, any temporal segment of the video can be described as a binary feature vector. A straightforward segmentation algorithm then allows to group similar contiguous speaker segments into scenes. An additional visual-only color-based segmentation is then used to refine the first segmentation. Experiments are performed on a subset of the Ally McBeal TV series and show promising results, obtained with a rule-free and generic method. For comparison purposes, test corpus annotations and description are made available to the community.},
+	Address = {Delft, The Netherlands},
+	Author = {Philippe Ercolessi and Herv\'{e} Bredin and Christine S\'{e}nac and Philippe Joly},
+	Booktitle = {WIAMIS 2011, 12th International Workshop on Image Analysis for Multimedia Interactive Services},
+	Month = {April},
+	Title = {{S}egmenting {TV} {S}eries into {S}cenes using {S}peaker {D}iarization},
+	Year = {2011},
+}
+
+@inproceedings{Delezoide2010,
+    Title = {{IRIM} at {TRECVID} 2009: {H}igh {L}evel {F}eature {E}xtraction},
+    Author = {Delezoide, Bertrand and Le Borgne, Herv{\'e} and Mo{\"e}llic, Pierre-Alain and Gorisse, David and Precioso, Fr{\'e}d{\'e}ric and Wang, Feng and Merialdo, Bernard and Gosselin, Philippe and Granjon, Lionel and Pellerin, Denis and Rombaut, Mich{\`e}le and Bredin, Herv{\'e} and Koenig, Lionel and Lachambre, H{\'e}l{\`e}ne and El Khoury, Elie and Mansencal, Boris and Zhou, Yifan and Benois-Pineau, Jenny and J{\'e}gou, Herv{\'e} and Ayache, St{\'e}phane and Safadi, Bahjat and Quenot, Georges and Fabrizio, Jonathan and Cord, Matthieu and Glotin, Herv{\'e} and Zhao, Zhongqiu and Dumont, Emilie and Augereau, Bertrand},
+    Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes our participation to the TRECVID 2009 High Level Features detection task. We evaluated a large number of different descriptors (on TRECVID 2008 data) and tried different fusion strategies, in particular hierarchical fusion and genetic fusion. The best IRIM run has a Mean Inferred Average Precision of 0.1220, which is significantly above TRECVID 2009 HLF detection task median performance. We found that fusion of the classification scores from different classifier types improves the performance and that even with a quite low individual performance, audio descriptors can help.},
+  Booktitle = {TRECVid 2009, TREC Video Retrieval Evaluation Online Proceedings},
+    Year = {2010},
+}
+
+@inproceedings{Bredin2010,
+  Title = {{IRIT} at {TRECVID} {HLF} 2009: {A}udio to the {R}escue},
+  Author = {Herv\'e Bredin and Lionel Koenig and H\'el\`ene Lachambre and Elie El Khoury},
+  Booktitle = {TRECVid 2009, TREC Video Retrieval Evaluation Online Proceedings},
+  Year = {2010},
 }
 
 @inproceedings{Cooray2009,
@@ -150,16 +157,6 @@
 	Title = {{T}alking-{F}ace {I}dentity {V}erification, {A}udiovisual {F}orgery and {R}obustness {I}ssues},
 	Url = {http://dx.doi.org/10.1155/2009/746481},
 	Year = {2009},
-}
-
-@inproceedings{Ercolessi2011,
-	Abstract = {In this paper, we propose a novel approach to perform scene segmentation of TV series. Using the output of our existing speaker diarization system, any temporal segment of the video can be described as a binary feature vector. A straightforward segmentation algorithm then allows to group similar contiguous speaker segments into scenes. An additional visual-only color-based segmentation is then used to refine the first segmentation. Experiments are performed on a subset of the Ally McBeal TV series and show promising results, obtained with a rule-free and generic method. For comparison purposes, test corpus annotations and description are made available to the community.},
-	Address = {Delft, The Netherlands},
-	Author = {Philippe Ercolessi and Herv\'{e} Bredin and Christine S\'{e}nac and Philippe Joly},
-	Booktitle = {WIAMIS 2011, 12th International Workshop on Image Analysis for Multimedia Interactive Services},
-	Month = {April},
-	Title = {{S}egmenting {TV} {S}eries into {S}cenes using {S}peaker {D}iarization},
-	Year = {2011},
 }
 
 @inbook{Bredin2009,
@@ -191,15 +188,6 @@
 	Year = {2008},
 }
 
-@inproceedings{Bredin2008,
-	Address = {Las Vegas, USA},
-	Author = {Herv{\'e} Bredin and G{\'e}rard Chollet},
-	Booktitle = {ICASSP 2008, IEEE International Conference on Acoustics, Speech, and Signal Processing},
-	Month = {April},
-	Title = {{M}aking {T}alking-{F}ace {A}uthentication {R}obust to {D}eliberate {I}mposture},
-	Year = {2008},
-}
-
 @inproceedings{Dumont2008,
 	Address = {Vancouver, BC, Canada},
 	Author = {Emilie Dumont and Bernard Merialdo and Slim Essid and Werner Bailer and Herwig Rehatschek and Daragh Byrne and Herv{\'e} Bredin and Noel O'Connor and Gareth JF Jones and Alan F Smeaton and Martin Haller and Andreas Krutz and Thomas Sikora and Tomas Piatrik},
@@ -218,41 +206,13 @@
 	Year = {2008},
 }
 
-@inproceedings{Argones-Rua2007,
-	Address = {Girona, Spain},
-	Author = {Enrique Argones-R{\'u}a and Carmen Garc{\'i}a-Mateo and Herv{\'e} Bredin and G{\'e}rard Chollet},
-	Booktitle = {1st Spanish Workshop on Biometrics},
-	Month = {June},
-	Title = {{A}liveness {D}etection using {C}oupled {H}idden {M}arkov {M}odels},
-	Year = {2007},
-}
-
-@article{Bredin2007,
+@inproceedings{Bredin2008,
+	Address = {Las Vegas, USA},
 	Author = {Herv{\'e} Bredin and G{\'e}rard Chollet},
-	Chapter = {179},
-	Journal = {EURASIP Journal on Advances in Signal Processing, Special Issue on Knowledge-Assisted Media Analysis for Interactive Multimedia Applications},
-	Month = {January},
-	Title = {{A}udio-{V}isual {S}peech {S}ynchrony {M}easure: {A}pplication to {B}iometrics},
-	Volume = {1},
-	Year = {2007},
-}
-
-@inproceedings{Bredin2012a,
-	Abstract = {We deal with the issue of combining dozens of classifiers into a better one. Our first contribution is the introduction of the notion of communities of classifiers. We build a complete graph with one node per classifier and edges weighted by a measure of similarity between connected classifiers. The resulting community structure is uncovered from this graph using the state-of-the-art Louvain algorithm. Our second contribution is a hierarchical fusion approach driven by these communities. First, intra-community fusion results in one classifier per community. Then, inter-community fusion takes advantage of their complementarity to achieve much better classification performance. Application to the combination of 90 classifiers in the framework of TRECVid 2010 Semantic Indexing task shows a 30% increase in performance relative to a baseline flat fusion.},
-	Address = {Kyoto, Japan},
-	Author = {Herv{\'e} Bredin},
-	Booktitle = {ICASSP 2012, IEEE International Conference on Acoustics, Speech, and Signal Processing},
-	Month = {March},
-	Title = {{C}ommunity-driven {H}ierarchical {F}usion of {N}umerous {C}lassifiers: {A}pplication to {V}ideo {S}emantic {I}ndexing},
-	Year = {2012},
-}
-
-@article{Argones-Rua2007a,
-	Author = {Enrique Argones-R{\'u}a and Herv{\'e} Bredin and Carmen Garc{\'i}a-Mateo and G{\'e}rard Chollet and Daniel Gonz{\'a}lez-Jim{\'e}nez},
-	Journal = {Pattern Analysis and Applications Journal},
-	Month = {December},
-	Title = {{A}udio-{V}isual {S}peech {A}synchrony {D}etection using {C}o-{I}nertia {A}nalysis and {C}oupled {H}idden {M}arkov {M}odels},
-	Year = {2007},
+	Booktitle = {ICASSP 2008, IEEE International Conference on Acoustics, Speech, and Signal Processing},
+	Month = {April},
+	Title = {{M}aking {T}alking-{F}ace {A}uthentication {R}obust to {D}eliberate {I}mposture},
+	Year = {2008},
 }
 
 @inbook{Abboud2007,
@@ -266,15 +226,6 @@
 	Year = {2007},
 }
 
-@inproceedings{Perrot2007,
-	Address = {London, UK},
-	Author = {Patrick Perrot and Herv{\'e} Bredin and G{\'e}rard Chollet},
-	Booktitle = {2007 International Crime Science Conference},
-	Month = {July},
-	Title = {{B}iometrics and {F}orensic {S}ciences: the {S}ame {Q}uest for {I}dentification?},
-	Year = {2007},
-}
-
 @inbook{Chollet2007,
 	Author = {G{\'e}rard Chollet and R{\'e}mi Landais and Herv{\'e} Bredin and Thomas Hueber and Chafic Mokbel and Patrick Perrot and Leila Zouari},
 	Booktitle = {Non-Linear Speech Processing},
@@ -284,12 +235,11 @@
 	Year = {2007},
 }
 
-@inproceedings{Landais2007,
-	Address = {Hammamet, Tunisia},
-	Author = {R{\'e}mi Landais and Herv{\'e} Bredin and Leila Zouari and G{\'e}rard Chollet},
-	Booktitle = {Traitement et Analyse de l'Information : M{\'e}thodes et Applications},
-	Month = {May},
-	Title = {{V}{\'e}rification {A}udiovisuelle de l'{I}dentit{\'e}},
+@article{Argones-Rua2007a,
+	Author = {Enrique Argones-R{\'u}a and Herv{\'e} Bredin and Carmen Garc{\'i}a-Mateo and G{\'e}rard Chollet and Daniel Gonz{\'a}lez-Jim{\'e}nez},
+	Journal = {Pattern Analysis and Applications Journal},
+	Month = {December},
+	Title = {{A}udio-{V}isual {S}peech {A}synchrony {D}etection using {C}o-{I}nertia {A}nalysis and {C}oupled {H}idden {M}arkov {M}odels},
 	Year = {2007},
 }
 
@@ -303,22 +253,50 @@
 	Year = {2007},
 }
 
-@inproceedings{Bredin2006,
-	Address = {Toulouse, France},
-	Author = {Herv{\'e} Bredin and Antonio Miguel and Ian Witten and G{\'e}rard Chollet},
-	Booktitle = {ICASSP 2006, IEEE International Conference on Acoustics, Speech, and Signal Processing},
-	Month = {May},
-	Title = {{D}etecting {R}eplay {A}ttacks in {A}udiovisual {I}dentity {V}erification},
-	Year = {2006},
+@inproceedings{Perrot2007,
+	Address = {London, UK},
+	Author = {Patrick Perrot and Herv{\'e} Bredin and G{\'e}rard Chollet},
+	Booktitle = {2007 International Crime Science Conference},
+	Month = {July},
+	Title = {{B}iometrics and {F}orensic {S}ciences: the {S}ame {Q}uest for {I}dentification?},
+	Year = {2007},
 }
 
-@inproceedings{Bredin2006b,
-	Address = {Hong-Kong, China},
-	Author = {Herv{\'e} Bredin and Najim Dehak and G{\'e}rard Chollet},
-	Booktitle = {ICPR 2006, IAPR International Conference on Pattern Recognition},
-	Month = {August},
-	Title = {{GMM}-based {SVM} for {F}ace {R}ecognition},
-	Year = {2006},
+@inproceedings{Argones-Rua2007,
+	Address = {Girona, Spain},
+	Author = {Enrique Argones-R{\'u}a and Carmen Garc{\'i}a-Mateo and Herv{\'e} Bredin and G{\'e}rard Chollet},
+	Booktitle = {1st Spanish Workshop on Biometrics},
+	Month = {June},
+	Title = {{A}liveness {D}etection using {C}oupled {H}idden {M}arkov {M}odels},
+	Year = {2007},
+}
+
+@inproceedings{Landais2007,
+	Address = {Hammamet, Tunisia},
+	Author = {R{\'e}mi Landais and Herv{\'e} Bredin and Leila Zouari and G{\'e}rard Chollet},
+	Booktitle = {Traitement et Analyse de l'Information : M{\'e}thodes et Applications},
+	Month = {May},
+	Title = {{V}{\'e}rification {A}udiovisuelle de l'{I}dentit{\'e}},
+	Year = {2007},
+}
+
+@inproceedings{Bredin2007a,
+	Address = {Honolulu, Hawaii, USA},
+	Author = {Herv{\'e} Bredin and G{\'e}rard Chollet},
+	Booktitle = {ICASSP 2007, IEEE International Conference on Acoustics, Speech, and Signal Processing},
+	Month = {April},
+	Title = {{A}udio-{V}isual {S}peech {S}ynchrony {M}easure for {T}alking-{F}ace {I}dentity {V}erification},
+	Year = {2007},
+}
+
+@article{Bredin2007,
+	Author = {Herv{\'e} Bredin and G{\'e}rard Chollet},
+	Chapter = {179},
+	Journal = {EURASIP Journal on Advances in Signal Processing, Special Issue on Knowledge-Assisted Media Analysis for Interactive Multimedia Applications},
+	Month = {January},
+	Title = {{A}udio-{V}isual {S}peech {S}ynchrony {M}easure: {A}pplication to {B}iometrics},
+	Volume = {1},
+	Year = {2007},
 }
 
 @inproceedings{Bredin2006c,
@@ -330,12 +308,12 @@
 	Year = {2006},
 }
 
-@inproceedings{Koreman2006,
-	Address = {Toulouse, France},
-	Author = {Jacques Koreman and Andrew C Morris and D. Wu and Sabah Jassim and Harin Sellahewa and J. Ehlers and G{\'e}rard Chollet and Guido Aversano and Herv{\'e} Bredin and Sonia Garcia-Salicetti and Lor{\`e}ne Allano and Bao Ly Van and Bernadette Dorizzi},
-	Booktitle = {MMUA 2006, Workshop on Multimodal User Authentication},
-	Month = {May},
-	Title = {{M}ulti-{M}odal {B}iometric {A}uthentication on the {SecurePhone} {PDA}},
+@inproceedings{Bredin2006b,
+	Address = {Hong-Kong, China},
+	Author = {Herv{\'e} Bredin and Najim Dehak and G{\'e}rard Chollet},
+	Booktitle = {ICPR 2006, IAPR International Conference on Pattern Recognition},
+	Month = {August},
+	Title = {{GMM}-based {SVM} for {F}ace {R}ecognition},
 	Year = {2006},
 }
 
@@ -354,6 +332,24 @@
 	Booktitle = {MMUA 2006, Workshop on Multimodal User Authentication},
 	Month = {May},
 	Title = {{T}he {BioSecure} {T}alking-{F}ace {R}eference {S}ystem},
+	Year = {2006},
+}
+
+@inproceedings{Koreman2006,
+	Address = {Toulouse, France},
+	Author = {Jacques Koreman and Andrew C Morris and D. Wu and Sabah Jassim and Harin Sellahewa and J. Ehlers and G{\'e}rard Chollet and Guido Aversano and Herv{\'e} Bredin and Sonia Garcia-Salicetti and Lor{\`e}ne Allano and Bao Ly Van and Bernadette Dorizzi},
+	Booktitle = {MMUA 2006, Workshop on Multimodal User Authentication},
+	Month = {May},
+	Title = {{M}ulti-{M}odal {B}iometric {A}uthentication on the {SecurePhone} {PDA}},
+	Year = {2006},
+}
+
+@inproceedings{Bredin2006,
+	Address = {Toulouse, France},
+	Author = {Herv{\'e} Bredin and Antonio Miguel and Ian Witten and G{\'e}rard Chollet},
+	Booktitle = {ICASSP 2006, IEEE International Conference on Acoustics, Speech, and Signal Processing},
+	Month = {May},
+	Title = {{D}etecting {R}eplay {A}ttacks in {A}udiovisual {I}dentity {V}erification},
 	Year = {2006},
 }
 
