@@ -10,6 +10,9 @@ argparser.add_argument('--english', action='store_true',
 argparser.add_argument('--francais', action='store_true',
                        help="Produire la version francaise")
 
+argparser.add_argument('--software', action='store_true',
+                       help="Add software/logiciel section")
+
 args = argparser.parse_args()
 
 if args.english == args.francais:
@@ -95,6 +98,12 @@ for btype in order:
     f.write('\\nocite%s{%s}\n' % (btype, ",".join(subpapers[btype])))
     f.write('\\bibliography%s{bredin}\n' % btype)
     f.write('\\bibliographystyle%s{plainyr-rev}\n' % btype)
+
+if args.software:
+    if args.english:
+        f.write('\\input{software}\n')
+    if args.francais:
+        f.write('\\input{logiciel}\n')
 
 f.write('\\end{document}\n')
 
