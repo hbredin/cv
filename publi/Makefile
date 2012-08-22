@@ -1,5 +1,5 @@
 clean:
-	rm -f *.tex
+	rm -f publi_*.tex
 	rm -f *.aux
 	rm -f *.bbl
 	rm -f *.blg
