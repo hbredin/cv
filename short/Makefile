@@ -1,6 +1,6 @@
 pdf:
-	pdflatex CV_EN_short.tex
-	pdflatex CV_FR_short.tex
+	latexmk -f -pdf CV_EN_short
+	latexmk -f -pdf CV_FR_short
 
 show:
 	open CV_EN_short.pdf
