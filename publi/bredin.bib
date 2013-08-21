@@ -1,3 +1,25 @@
+@inproceedings{Poignant2013,
+	Abstract = {Existing methods for unsupervised identification of speakers in TV broadcast usually rely on the output of a speaker diarization module and try to name each cluster using names provided by another source of information: we call it ``late naming''. Hence, written names extracted from title blocks tend to lead to high precision identification, although they cannot correct errors made during the clustering step. In this paper, we extend our previous ``late naming'' approach in two ways: ``integrated naming'' and ``early naming''. While ``late naming'' relies on a speaker diarization module optimized for speaker diarization, ``integrated naming'' jointly optimize speaker diarization and name propagation in terms of identification errors. ``Early naming'' modifies the speaker diarization module by adding constraints preventing two clusters with different written names to be merged together. While ``integrated naming'' yields similar identification performance as ``late naming'' (with better precision), ``early naming'' improves over this baseline both in terms of identification error rate and stability of the clustering stopping criterion.},
+	Title = {{Towards a Better Integration of Written Names for Unsupervised Speakers Identification in Videos}},
+	Author = {Johann Poignant and Herv{\'e} Bredin and Laurent Besacier and Georges Qu{\'e}not and Claude Barras},
+	Pages = {84--89},
+	Year = {2013},
+	Month = {August},
+	Booktitle = {SLAM 2013, First Workshop on Speech, Language and Audio for Multimedia},
+	Address = {Marseille, France},
+}
+
+@inproceedings{Bredin2013a,
+	Abstract = {We describe QCompere consortium submissions to the REPERE 2013 evaluation campaign. The REPERE challenge aims at gathering four communities (face recognition, speaker identification, optical character recognition and named entity detection) towards the same goal: multimodal person recognition in TV broadcast. First, four mono-modal components are introduced (one for each foregoing community) constituting the elementary building blocks of our various submissions. Then, depending on the target modality (speaker or face recognition) and on the task (supervised or unsupervised recognition), four different fusion techniques are introduced: they can be summarized as propagation-, classifier-, rule- or graph-based approaches. Finally, their performance is evaluated on REPERE 2013 test set and their advantages and limitations are discussed.},
+	Title = {{QCompere @ REPERE 2013}},
+	Author = {Herv{\'e} Bredin and Johann Poignant and Guillaume Fortier and Makarand Tapaswi and Viet-Bac Le and Anindya Roy and Claude Barras and Sophie Rosset and Achintya Sarkar and Qian Yang and Hua Gao and Alexis Mignon and Jakob Verbeek and Laurent Besacier and Georges Qu{\'e}not and Hazim Kemal Ekenel and Rainer Stiefelhagen},
+	Pages = {49--54},
+	Year = {2013},
+	Month = {August},
+	Booktitle = {SLAM 2013, First Workshop on Speech, Language and Audio for Multimedia},
+	Address = {Marseille, France},
+}
+
 
 @inproceedings{Bredin2013,
 	Abstract = {Most state-of-the-art approaches address speaker diarization as a hierarchical agglomerative clustering problem in the audio domain. In this paper, we propose to revisit one of them: speech turns clustering based on the Bayesian Information Criterion (a.k.a. BIC clustering). First, we show how to model it as an integer linear programming (ILP) problem.Its resolution leads to the same overall diarization error rate as standard BIC clustering but generates significantly purer speaker clusters. Then, we describe how this approach can easily be extended to the audiovisual domain and TV broadcast in particular. The straightforward integration of detected overlaid names (used to introduce guests or journalists, and obtained via video OCR) into a multimodal ILP problem yields significantly better speaker diarization results. Finally, we explain how this novel paradigm can incidentally be used for unsupervised speaker identification (i.e. not relying on any prior acoustic speaker models). Experiments on the REPERE TV broadcast corpus show that it achieves performance close to that of an oracle capable of identifying any speaker as long as their name appears on screen at least once in the video.},
