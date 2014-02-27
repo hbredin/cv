@@ -1,3 +1,99 @@
+# =============================================================================
+# TEMPLATES
+# =============================================================================
+
+
+inproceedings{TemplateConference,
+	Title = {{Title}},
+	Author = {Herv{\'e} Bredin},
+	Booktitle = {{Conference}},
+	Pages = {},
+	Year = {},
+	Month = {},
+	Address = {City, Country},
+	Abstract = {},
+}
+
+article{TemplateJournal,
+	Title = {{Title}},
+	Author = {Herv\'{e} Bredin},
+	Journal = {{}},
+	Year = {},
+	Abstract = {},
+}
+
+inbook{TemplateChapter,
+	Title = {{Title}},
+	Author = {Herv{\'e} Bredin},
+	Booktitle = {{}},
+	Editor = {{}},
+	Month = {},
+	Year = {},
+	Publisher = {{}},
+}
+
+
+# =============================================================================
+# SUBMITTED
+# =============================================================================
+
+MMIR - PIG
+article{Bredin2014,
+	Abstract = {This work introduces a unified framework for \emph{mono-}, \emph{cross-} and \emph{multi-modal} person recognition in multimedia data. Dubbed \emph{Person Instance Graph}, it models the person recognition task as a graph mining problem: \ie finding the best mapping between person \emph{instance} vertices and \emph{identity} vertices. Practically, we describe how the approach can be applied to speaker identification in TV broadcast. Then, a solution to the above-mentioned mapping problem is proposed. It relies on \emph{Integer Linear Programming} to model the problem of clustering person instances based on their identity. We provide an in-depth theoretical definition of the optimization problem. Moreover, we improve two fundamental aspects of our previous related work: the problem constraints and the optimized objective function. Finally, a thorough experimental evaluation of the proposed framework is performed on a publicly available benchmark database. Depending on the graph configuration (\ie the choice of its vertices and edges), we show that multiple tasks can be addressed interchangeably (\eg speaker diarization, supervised or unsupervised speaker identification), significantly outperforming state-of-the-art mono-modal approaches.},
+	Author = {Herv\'{e} Bredin and Anindya Roy and Viet-Bac Le and Claude Barras},
+	Journal = {In review for International Journal of Multimedia Information Retrieval},
+	Publisher = {Springer-Verlag},
+	Title = {{Person Instance Graphs for Mono-, Cross- and Multi-Modal Person Recognition in Multimedia Data. Application to Speaker Identification in TV Broadcast}},
+	Year = {2014},
+}
+
+# =============================================================================
+# ACCEPTED
+# =============================================================================
+
+LREC - TVD
+@inproceedings{Roy2014a,
+	Abstract = {We present a new dataset built around two TV series, The Big Bang Theory (a situation comedy) and Game of Thrones (a fantasy drama). It has multiple tracks including dialogue, crowd-sourced textual descriptions and metadata, all time-stamped and temporally aligned with each other. We provide tools to reproduce it for research purposes, provided that one has legally acquired the DVDs of the series. The alignment algorithm used is evaluated on a manually aligned subset of the data.},
+	Title = {{TVD: a Reproducible and Multiply Aligned TV Series Dataset}},
+	Author = {Anindya Roy and Camille Guinaudeau and Herv{\'e} Bredin and Claude Barras},
+	Booktitle = {{LREC 2014, 9th Language Resources and Evaluation Conference}},
+	Pages = {},
+	Year = {2014},
+	Month = {May},
+	Address = {Reykjavik, Iceland},
+}
+
+MTAP - Lexical SID
+@article{Roy2014,
+	Abstract = {It is possible to use lexical information extracted from speech transcripts for speaker identification (SID), either on its own or to improve the performance of standard cepstral-based SID systems upon fusion. This was established before typically using isolated speech from single speakers (NIST SRE corpora, parliamentary speeches). On the contrary, this work applies lexical approaches for SID on a different type of data. It uses the REPERE corpus consisting of unsegmented multiparty conversations, mostly debates, discussions and Q&A sessions from TV shows. It is hypothesized that people give out clues to their identity when speaking in such settings which this work aims to exploit. The impact on SID performance of the diarization front-end required to pre-process the unsegmented data is also measured. Four lexical SID approaches are studied in this work, including TFIDF, BM25 and LDA-based topic modeling. Results are analysed in terms of TV shows and speaker roles. Lexical approaches achieve low error rates for certain speaker roles such as anchors and journalists, sometimes lower than a standard cepstral-based Gaussian Supervector -- Support Vector Machine (GSV-SVM) system. Also, in certain cases, the lexical system shows modest improvement over the cepstral-based system performance using score-level sum fusion. To highlight the potential of using lexical information not just to improve upon cepstral-based SID systems but as an independent approach in its own right, initial studies on crossmedia SID is briefly reported. Instead of using speech data as all cepstral systems require, this approach uses Wikipedia texts to train lexical speaker models which are then tested on speech transcripts to identify speakers.},
+	Author = {Anindya Roy and Herv\'{e} Bredin and William Hartmann and Viet-Bac Le and Claude Barras and Jean-Luc Gauvain},
+	Journal = {{Multimedia Tools and Applications}},
+	Title = {{Lexical Speaker Identification in TV Shows}},
+	Year = {2014},
+}
+
+
+chapter - fusion
+@inbook{Strat2014,
+	Abstract = {Current research shows that the detection of semantic concepts (animal, bus, person, dancing etc.) in multimedia documents such as videos, requires the use of several types of complementary descriptors in order to achieve good results. In this work, we explore strategies for combining dozens of complementary content descriptors (or ``experts'') in an efficient way, through the use of late fusion approaches, for concept detection in multimedia documents. We explore two fusion approaches that share a common structure: both start with a clustering of experts stage, continue with an intra-cluster fusion and finish with an inter-cluster fusion, and we also experiment with other state-of-the-art methods. The first fusion approach relies on a priori knowledge about the internals of each expert to group the set of available experts by similarity. The second approach automatically obtains measures on the similarity of experts from their output to group the experts using agglomerative clustering, and then combines the results of this fusion with those from other methods. In the end, we show that an additional performance boost can be obtained by also considering the context of multimedia elements.},
+	Author = {Sabin Tiberius Strat and Alexandre Benoit and Patrick Lambert and Herv{\'e} Bredin and Georges Qu\'{e}not},
+	Booktitle = {{Fusion in Computer Vision -- Understanding Complex Visual Content}},
+	Editor = {Bogdan Ionescu and Jenny Benois-Pineau and Tomas Piatrik and  Georges Qu\'{e}not},
+	Month = {},
+	Publisher = {Springer Verlag},
+	Title = {{Hierarchical Late Fusion for Concept Detection in Videos}},
+	Year = {2014},
+}
+
+# =============================================================================
+# PUBLISHED
+# =============================================================================
+
+
+
+# ======= 2012-09 --> 2013-08 =================================================
+
+# 2013-08
 @inproceedings{Poignant2013,
 	Abstract = {Existing methods for unsupervised identification of speakers in TV broadcast usually rely on the output of a speaker diarization module and try to name each cluster using names provided by another source of information: we call it ``late naming''. Hence, written names extracted from title blocks tend to lead to high precision identification, although they cannot correct errors made during the clustering step. In this paper, we extend our previous ``late naming'' approach in two ways: ``integrated naming'' and ``early naming''. While ``late naming'' relies on a speaker diarization module optimized for speaker diarization, ``integrated naming'' jointly optimize speaker diarization and name propagation in terms of identification errors. ``Early naming'' modifies the speaker diarization module by adding constraints preventing two clusters with different written names to be merged together. While ``integrated naming'' yields similar identification performance as ``late naming'' (with better precision), ``early naming'' improves over this baseline both in terms of identification error rate and stability of the clustering stopping criterion.},
 	Title = {{Towards a Better Integration of Written Names for Unsupervised Speakers Identification in Videos}},
@@ -9,6 +105,8 @@
 	Address = {Marseille, France},
 }
 
+
+# 2013-08
 @inproceedings{Bredin2013a,
 	Abstract = {We describe QCompere consortium submissions to the REPERE 2013 evaluation campaign. The REPERE challenge aims at gathering four communities (face recognition, speaker identification, optical character recognition and named entity detection) towards the same goal: multimodal person recognition in TV broadcast. First, four mono-modal components are introduced (one for each foregoing community) constituting the elementary building blocks of our various submissions. Then, depending on the target modality (speaker or face recognition) and on the task (supervised or unsupervised recognition), four different fusion techniques are introduced: they can be summarized as propagation-, classifier-, rule- or graph-based approaches. Finally, their performance is evaluated on REPERE 2013 test set and their advantages and limitations are discussed.},
 	Title = {{QCompere @ REPERE 2013}},
@@ -20,7 +118,7 @@
 	Address = {Marseille, France},
 }
 
-
+# 2013-08
 @inproceedings{Bredin2013,
 	Abstract = {Most state-of-the-art approaches address speaker diarization as a hierarchical agglomerative clustering problem in the audio domain. In this paper, we propose to revisit one of them: speech turns clustering based on the Bayesian Information Criterion (a.k.a. BIC clustering). First, we show how to model it as an integer linear programming (ILP) problem.Its resolution leads to the same overall diarization error rate as standard BIC clustering but generates significantly purer speaker clusters. Then, we describe how this approach can easily be extended to the audiovisual domain and TV broadcast in particular. The straightforward integration of detected overlaid names (used to introduce guests or journalists, and obtained via video OCR) into a multimodal ILP problem yields significantly better speaker diarization results. Finally, we explain how this novel paradigm can incidentally be used for unsupervised speaker identification (i.e. not relying on any prior acoustic speaker models). Experiments on the REPERE TV broadcast corpus show that it achieves performance close to that of an oracle capable of identifying any speaker as long as their name appears on screen at least once in the video.},
 	Title = {{Integer Linear Programming for Speaker Diarization and Cross-Modal Identification in TV Broadcast}},
@@ -31,14 +129,8 @@
 	Address = {Lyon, France},
 	}
 
-@article{Ercolessi2012a,
-	Abstract = {Modern TV series have complex plots made of several intertwined stories following numerous characters. In this paper, we propose an approach for automatically detecting these stories in order to generate video summaries and we propose a visualization tool to have a quick and easy look at TV series. Based on automatic scene segmentation of each TV series episode (a scene is defined as temporally and spatially continuous and semantically coherent), scenes are clustered into stories, made of (non necessarily adjacent) semantically similar scenes. Visual, audio and text modalities are combined to achieve better scene segmentation and story detection performance. An extraction of salient scenes from stories is performed to create the summary. Experimentations are conducted on two TV series with different formats.},
-	Author = {Philippe Ercolessi and Christine S\'{e}nac and Herv\'{e} Bredin and Sandrine Mouysset},
-	Journal = {Document Num\'{e}rique -- Num\'{e}ro Sp\'{e}cial ``R\'{e}sum\'{e} Automatique des Documents''},
-	Title = {{V}ers un {R}\'{e}sum\'{e} {A}utomatique de {S}\'{e}ries {T}\'{e}l\'{e}vis\'{e}es bas\'{e} sur une {R}echerche {M}ultimodale d'{H}istoires},
-	Year = {2012},
-}
 
+# 2012-11
 @inproceedings{Ercolessi2012c,
 	Title = {{StoViz}: {S}tory {V}isualization of {TV} {S}eries},
 	Author = {Philippe Ercolessi and Herv\'e Bredin and Christine S\'enac},
@@ -49,6 +141,7 @@
 	Address = {Nara, Japan},
 }
 
+# 2012-11
 @inproceedings{Ercolessi2012b,
 	Title = {{H}ierarchical {F}ramework for {P}lot {D}e-interlacing of {TV} {S}eries based on {S}peakers, {D}ialogues and {I}mages},
 	Author = {Philippe Ercolessi and Christine S\'enac and Sandrine Mouysset and Herv\'e Bredin},
@@ -59,6 +152,7 @@
 	Address = {Nara, Japan},
 }
 
+# 2012-10
 @inproceedings{Strat2012,
 	Title = {{H}ierarchical {L}ate {F}usion for {C}oncept {D}etection in {V}ideos},
 	Author = {Tiberius Strat and Alexandre Benoit and Herv\'e Bredin and Georges  Qu\'enot and Patrick  Lambert},
@@ -69,6 +163,7 @@
 	Address = {Firenze, Italy},
 }
 
+# 2012-10
 @inproceedings{Bredin2012b,
 	Title = {{F}usion of {S}peech, {F}aces and {T}ext for {P}erson {I}dentification in {TV} {B}roadcast},
 	Author = {Herv\'e Bredin and Johann Poignant and Makarand Tapaswi and Guillaume Fortier and Viet Bac Le and Thibault Napoleon and Hua Gao and Claude Barras and Sophie Rosset and Laurent Besacier and Jakob Verbeek and Georges Qu\'enot and Fr\'ed\'eric Jurie and Hazim Kemal Ekenel},
@@ -79,6 +174,16 @@
 	Address = {Firenze, Italy},
 }
 
+# 2012-09
+@article{Ercolessi2012a,
+	Abstract = {Modern TV series have complex plots made of several intertwined stories following numerous characters. In this paper, we propose an approach for automatically detecting these stories in order to generate video summaries and we propose a visualization tool to have a quick and easy look at TV series. Based on automatic scene segmentation of each TV series episode (a scene is defined as temporally and spatially continuous and semantically coherent), scenes are clustered into stories, made of (non necessarily adjacent) semantically similar scenes. Visual, audio and text modalities are combined to achieve better scene segmentation and story detection performance. An extraction of salient scenes from stories is performed to create the summary. Experimentations are conducted on two TV series with different formats.},
+	Author = {Philippe Ercolessi and Christine S\'{e}nac and Herv\'{e} Bredin and Sandrine Mouysset},
+	Journal = {Document Num\'{e}rique -- Num\'{e}ro Sp\'{e}cial ``R\'{e}sum\'{e} Automatique des Documents''},
+	Title = {{V}ers un {R}\'{e}sum\'{e} {A}utomatique de {S}\'{e}ries {T}\'{e}l\'{e}vis\'{e}es bas\'{e} sur une {R}echerche {M}ultimodale d'{H}istoires},
+	Year = {2012},
+}
+
+# 2012-09
 @inproceedings{Poignant2012,
 	Abstract = {We propose an approach for unsupervised speaker identification in TV broadcast videos, by combining acoustic speaker diarization with person names obtained via video OCR from overlaid texts. Three methods for the propagation of the overlaid names to the speech turns are compared, taking into account the co-occurence duration between the speaker clusters and the names provided by the video OCR and using a task-adapted variant of the TF-IDF information retrieval coefficient. These methods were tested on the REPERE dry-run evaluation corpus, containing 3 hours of annotated videos. Our best unsupervised system reaches a F-measure of 70.2\% when considering all the speakers, and 81.7\% if anchor speakers are left out. By comparison, a mono-modal, supervised speaker identification system with 535 speaker models trained on matching development data and additional TV and radio data only provided a 57.5\% F-measure when considering all the speakers and 45.7\% without anchor.},
 	Address = {Portland, Oregon},
@@ -89,6 +194,9 @@
 	Year = {2012},
 }
 
+# ======= 2011-09 --> 2012-08 =================================================
+
+# 2012-06
 @inproceedings{Ercolessi2012,
 	Abstract = {Multiple sub-stories usually coexist in every episode of a TV series. We propose several variants of an approach for plot de-interlacing based on scenes clustering -- with the ultimate goal of providing the end-user with tools for fast and easy overview of one episode, one season or the whole TV series. Each scene can be described in three different ways (based on color histograms, speaker diarization or automatic speech recognition outputs) and four clustering approaches are investigated, one of them based on a graphical representation of the video. Experiments are performed on two TV series of different lengths and formats. We show that semantic descriptors (such as speaker diarization) give the best results and underline that our approach provides useful information for plot de-interlacing.},
 	Address = {Annecy, France},
@@ -99,6 +207,7 @@
 	Year = {2012},
 }
 
+# 2012-03
 @inproceedings{Bredin2012a,
 	Abstract = {We deal with the issue of combining dozens of classifiers into a better one. Our first contribution is the introduction of the notion of communities of classifiers. We build a complete graph with one node per classifier and edges weighted by a measure of similarity between connected classifiers. The resulting community structure is uncovered from this graph using the state-of-the-art Louvain algorithm. Our second contribution is a hierarchical fusion approach driven by these communities. First, intra-community fusion results in one classifier per community. Then, inter-community fusion takes advantage of their complementarity to achieve much better classification performance. Application to the combination of 90 classifiers in the framework of TRECVid 2010 Semantic Indexing task shows a 30% increase in performance relative to a baseline flat fusion.},
 	Address = {Kyoto, Japan},
@@ -109,6 +218,7 @@
 	Year = {2012},
 }
 
+# 2012-03
 @inproceedings{Bredin2012,
 	Abstract = {We investigate the use of speaker diarization (SD) and automatic speech recognition (ASR) for the segmentation of audiovisual documents into scenes. We introduce multiple monomodal and multimodal approaches based on a state-of-the-art algorithm called generalized scene transition graph (GSTG). First, we extend the latter with the use of semantic information derived from both SD and ASR. Then, multimodal fusion of color histograms, SD and ASR is investigated at various point of the GSTG pipeline (early, late or intermediate fusion). Experiments driven on a few episodes of a popular TV show indicate that SD and ASR can be successfully combined with visual information and bring an additional +11% relative increase in terms of F-Measure for scene boundary detection over the state-of-the-art baseline.},
 	Address = {Kyoto, Japan},
@@ -119,6 +229,7 @@
 	Year = {2012},
 }
 
+# 2011-11
 @inproceedings{Delezoide2012,
   Title = {{IRIM} at {TRECVID} 2011: {S}emantic {I}ndexing and {I}nstance {S}earch},
   Author = {Bertrand Delezoide and Fr\'ed\'eric Precioso and Philippe Gosselin and Miriam Redi and Bernard M\'erialdo and Lionel Granjon and Denis Pellerin and Mich\`ele Rombaut and Herv\'e J\'egou and R\'emi Vieux and Boris Mansencal and Jenny Benois-Pineau and St\'ephane Ayache and Bahjat Safadi and Franck Thollard and Georges Qu\'enot and Herv\'e Bredin and Matthieu Cord and Alexandre Benoit and Patrick Lambert and Tiberius Strat and Joseph Razik and S\'ebastion Paris and Herv\'e Glotin},
@@ -127,6 +238,7 @@
   Booktitle = {TRECVid 2011, TREC Video Retrieval Evaluation Online Proceedings},
 }
 
+# 2011-10
 @article{Ramona2011,
 	Abstract = {This paper presents the first public framework for the evaluation of audio fingerprinting techniques. Although the domain of audio identification is very active, both in the industry and the academic world, there is nowadays no common basis to compare the proposed techniques. This is because corpuses and evaluation protocols differ between the authors. The framework we present here corresponds to a use-case in which audio excerpts have to be detected in a radio broadcast stream. This scenario indeed naturally provides a large variety of audio distortions that makes this task a real challenge for fingerprinting systems. Scoring metrics are discussed, with regard to this particular scenario. We then describe a whole evaluation framework including an audio corpus, along with the related groundtruth annotation, and a toolkit for the computation of the score metrics. An example of application of this framework is finally detailed. This took place during the evaluation campaign of the Quaero project. This evaluation framework is publicly available for download and constitutes a simple, yet thorough, platform that can be used by the community in the field of audio identification, to encourage reproducible results.},
 	Author = {Mathieu Ramona and S\'{e}bastien Fenet and Rapha\"{e}l Blouet and Herv\'{e} Bredin and Thomas Fillon and Geoffroy Peeters},
@@ -134,13 +246,9 @@
 	Title = {{A} {P}ublic {A}udio {I}dentification {E}valuation {F}ramework for {B}roadcast {M}onitoring},
 	Year = {2011},
 }
-@inproceedings{Gorisse2011,
-  Title = {{IRIM} at {TRECVID} 2010: {S}emantic {I}ndexing and {I}nstance {S}earch},
-  Author = {David Gorisse and Fr\'ed\'eric Precioso and Philippe Gosselin, Lionel Granjon and Denis Pellerin and Mich\`ele Rombaut and Herv\'e Bredin and Lionel Koenig and R\'emi Vieux and Boris Mansencal and Jenny Benois-Pineau and Hugo Boujut and Claire Morand and Herv\'e J\'egou and St\'ephane Ayache and Bahjat Safadi and Yubing Tong and Franck Thollard and Georges Qu\'enot and Matthieu Cord and Alexandre Beno\^it and Patrick Lambert},
-  Year = {2011},
-  Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes our participation to the TRECVID 2010 semantic indexing and instance search tasks. For the semantic indexing task, we evaluated a number of different descriptors and tried different fusion strategies, in particular hierarchical fusion. The best IRIM run has a Mean Inferred Average Precision of 0.0442, which is above the task median performance. We found that fusion of the classification scores from different classifier types improves the performance and that even with a quite low individual performance, audio descriptors can help. For the instance search task, we used only one of the example images in our queries. The rank is nearly in the middle of the list of participants. The experiment showed that HSV features outperform the concatenation of HSV and Edge histograms or the Wavelet features.},
-  Booktitle = {TRECVid 2010, TREC Video Retrieval Evaluation Online Proceedings},
-}
+
+# ======= before 2011-08 ======================================================
+
 
 @inproceedings{Ercolessi2011,
 	Abstract = {In this paper, we propose a novel approach to perform scene segmentation of TV series. Using the output of our existing speaker diarization system, any temporal segment of the video can be described as a binary feature vector. A straightforward segmentation algorithm then allows to group similar contiguous speaker segments into scenes. An additional visual-only color-based segmentation is then used to refine the first segmentation. Experiments are performed on a subset of the Ally McBeal TV series and show promising results, obtained with a rule-free and generic method. For comparison purposes, test corpus annotations and description are made available to the community.},
@@ -152,19 +260,30 @@
 	Year = {2011},
 }
 
+# 2010-11
+@inproceedings{Gorisse2011,
+  Title = {{IRIM} at {TRECVID} 2010: {S}emantic {I}ndexing and {I}nstance {S}earch},
+  Author = {David Gorisse and Fr\'ed\'eric Precioso and Philippe Gosselin, Lionel Granjon and Denis Pellerin and Mich\`ele Rombaut and Herv\'e Bredin and Lionel Koenig and R\'emi Vieux and Boris Mansencal and Jenny Benois-Pineau and Hugo Boujut and Claire Morand and Herv\'e J\'egou and St\'ephane Ayache and Bahjat Safadi and Yubing Tong and Franck Thollard and Georges Qu\'enot and Matthieu Cord and Alexandre Beno\^it and Patrick Lambert},
+  Year = {2011},
+  Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes our participation to the TRECVID 2010 semantic indexing and instance search tasks. For the semantic indexing task, we evaluated a number of different descriptors and tried different fusion strategies, in particular hierarchical fusion. The best IRIM run has a Mean Inferred Average Precision of 0.0442, which is above the task median performance. We found that fusion of the classification scores from different classifier types improves the performance and that even with a quite low individual performance, audio descriptors can help. For the instance search task, we used only one of the example images in our queries. The rank is nearly in the middle of the list of participants. The experiment showed that HSV features outperform the concatenation of HSV and Edge histograms or the Wavelet features.},
+  Booktitle = {TRECVid 2010, TREC Video Retrieval Evaluation Online Proceedings},
+}
+
+# 2009-11
+@inproceedings{Bredin2010,
+  Title = {{IRIT} at {TRECVID} {HLF} 2009: {A}udio to the {R}escue},
+  Author = {Herv\'e Bredin and Lionel Koenig and H\'el\`ene Lachambre and Elie El Khoury},
+  Booktitle = {TRECVid 2009, TREC Video Retrieval Evaluation Online Proceedings},
+  Year = {2010},
+}
+
+# 2009-11
 @inproceedings{Delezoide2010,
     Title = {{IRIM} at {TRECVID} 2009: {H}igh {L}evel {F}eature {E}xtraction},
     Author = {Delezoide, Bertrand and Le Borgne, Herv{\'e} and Mo{\"e}llic, Pierre-Alain and Gorisse, David and Precioso, Fr{\'e}d{\'e}ric and Wang, Feng and Merialdo, Bernard and Gosselin, Philippe and Granjon, Lionel and Pellerin, Denis and Rombaut, Mich{\`e}le and Bredin, Herv{\'e} and Koenig, Lionel and Lachambre, H{\'e}l{\`e}ne and El Khoury, Elie and Mansencal, Boris and Zhou, Yifan and Benois-Pineau, Jenny and J{\'e}gou, Herv{\'e} and Ayache, St{\'e}phane and Safadi, Bahjat and Quenot, Georges and Fabrizio, Jonathan and Cord, Matthieu and Glotin, Herv{\'e} and Zhao, Zhongqiu and Dumont, Emilie and Augereau, Bertrand},
     Abstract = {The IRIM group is a consortium of French teams working on Multimedia Indexing and Retrieval. This paper describes our participation to the TRECVID 2009 High Level Features detection task. We evaluated a large number of different descriptors (on TRECVID 2008 data) and tried different fusion strategies, in particular hierarchical fusion and genetic fusion. The best IRIM run has a Mean Inferred Average Precision of 0.1220, which is significantly above TRECVID 2009 HLF detection task median performance. We found that fusion of the classification scores from different classifier types improves the performance and that even with a quite low individual performance, audio descriptors can help.},
   Booktitle = {TRECVid 2009, TREC Video Retrieval Evaluation Online Proceedings},
     Year = {2010},
-}
-
-@inproceedings{Bredin2010,
-  Title = {{IRIT} at {TRECVID} {HLF} 2009: {A}udio to the {R}escue},
-  Author = {Herv\'e Bredin and Lionel Koenig and H\'el\`ene Lachambre and Elie El Khoury},
-  Booktitle = {TRECVid 2009, TREC Video Retrieval Evaluation Online Proceedings},
-  Year = {2010},
 }
 
 @inproceedings{Cooray2009,
