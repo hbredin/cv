@@ -37,41 +37,33 @@ inbook{TemplateChapter,
 # SUBMITTED
 # =============================================================================
 
-MMIR - PIG
-article{Bredin2014,
-	Abstract = {This work introduces a unified framework for \emph{mono-}, \emph{cross-} and \emph{multi-modal} person recognition in multimedia data. Dubbed \emph{Person Instance Graph}, it models the person recognition task as a graph mining problem: \ie finding the best mapping between person \emph{instance} vertices and \emph{identity} vertices. Practically, we describe how the approach can be applied to speaker identification in TV broadcast. Then, a solution to the above-mentioned mapping problem is proposed. It relies on \emph{Integer Linear Programming} to model the problem of clustering person instances based on their identity. We provide an in-depth theoretical definition of the optimization problem. Moreover, we improve two fundamental aspects of our previous related work: the problem constraints and the optimized objective function. Finally, a thorough experimental evaluation of the proposed framework is performed on a publicly available benchmark database. Depending on the graph configuration (\ie the choice of its vertices and edges), we show that multiple tasks can be addressed interchangeably (\eg speaker diarization, supervised or unsupervised speaker identification), significantly outperforming state-of-the-art mono-modal approaches.},
-	Author = {Herv\'{e} Bredin and Anindya Roy and Viet-Bac Le and Claude Barras},
-	Journal = {In review for International Journal of Multimedia Information Retrieval},
-	Publisher = {Springer-Verlag},
-	Title = {{Person Instance Graphs for Mono-, Cross- and Multi-Modal Person Recognition in Multimedia Data. Application to Speaker Identification in TV Broadcast}},
-	Year = {2014},
-}
 
 # =============================================================================
 # ACCEPTED
 # =============================================================================
 
-LREC - TVD
-@inproceedings{Roy2014a,
-	Abstract = {We present a new dataset built around two TV series, The Big Bang Theory (a situation comedy) and Game of Thrones (a fantasy drama). It has multiple tracks including dialogue, crowd-sourced textual descriptions and metadata, all time-stamped and temporally aligned with each other. We provide tools to reproduce it for research purposes, provided that one has legally acquired the DVDs of the series. The alignment algorithm used is evaluated on a manually aligned subset of the data.},
-	Title = {{TVD: a Reproducible and Multiply Aligned TV Series Dataset}},
-	Author = {Anindya Roy and Camille Guinaudeau and Herv{\'e} Bredin and Claude Barras},
-	Booktitle = {{LREC 2014, 9th Language Resources and Evaluation Conference}},
+@inproceedings{Bruneau2014a,
+	Title = {{Collaborative Annotation of Multimedia Resources}},
+	Author = {Pierrick Bruneau and Micka{\¨e}l Stefas and Mateusz Budnik and Johann Poignant and Herv{\'e} Bredin and Thomas Tamisier and Beno{\^i}t Otjacques},
+	Booktitle = {{CDVE 2014, 11th International Conference on Cooperative Design, Visualization and Engineering}},
 	Pages = {},
 	Year = {2014},
-	Month = {May},
-	Address = {Reykjavik, Iceland},
+	Month = {September},
+	Address = {Seattle, USA},
+	Abstract = {Reference multimedia corpora for use in automated annotation algorithms are very demanding of manual work. The Camomile project advocates the joint progress of automated annotation methods and tools for improving the benchmark resources. This paper shows some work in progress in interactive visualization of annotations, and perspectives in harnessing the collaboration between manual annotators, algorithm designers, and benchmark administrators.},
 }
 
-MTAP - Lexical SID
-@article{Roy2014,
-	Abstract = {It is possible to use lexical information extracted from speech transcripts for speaker identification (SID), either on its own or to improve the performance of standard cepstral-based SID systems upon fusion. This was established before typically using isolated speech from single speakers (NIST SRE corpora, parliamentary speeches). On the contrary, this work applies lexical approaches for SID on a different type of data. It uses the REPERE corpus consisting of unsegmented multiparty conversations, mostly debates, discussions and Q&A sessions from TV shows. It is hypothesized that people give out clues to their identity when speaking in such settings which this work aims to exploit. The impact on SID performance of the diarization front-end required to pre-process the unsegmented data is also measured. Four lexical SID approaches are studied in this work, including TFIDF, BM25 and LDA-based topic modeling. Results are analysed in terms of TV shows and speaker roles. Lexical approaches achieve low error rates for certain speaker roles such as anchors and journalists, sometimes lower than a standard cepstral-based Gaussian Supervector -- Support Vector Machine (GSV-SVM) system. Also, in certain cases, the lexical system shows modest improvement over the cepstral-based system performance using score-level sum fusion. To highlight the potential of using lexical information not just to improve upon cepstral-based SID systems but as an independent approach in its own right, initial studies on crossmedia SID is briefly reported. Instead of using speech data as all cepstral systems require, this approach uses Wikipedia texts to train lexical speaker models which are then tested on speech transcripts to identify speakers.},
-	Author = {Anindya Roy and Herv\'{e} Bredin and William Hartmann and Viet-Bac Le and Claude Barras and Jean-Luc Gauvain},
-	Journal = {{Multimedia Tools and Applications}},
-	Title = {{Lexical Speaker Identification in TV Shows}},
+
+IV 2014
+@inproceedings{Bruneau2014,
+	Title = {{A Web-based Tool for the Visual Analysis of Media Annotations}},
+	Author = {Pierrick Bruneau and Micka{\¨e}l Stefas and Herv{\'e} Bredin and Anh-Phuong Ta and Thomas Tamisier and Claude Barras},
+	Booktitle = {{iV 2014, 18th International Conference Information Visualisation}},
 	Year = {2014},
+	Month = {July},
+	Address = {Paris, France},
+	Abstract = {Multimedia annotation algorithms infer localized meta-data in multimedia content, e.g. speakers or appearing faces. There is a growing need of experts from this domain to perform advanced analyses, that go beyond medium-scale quality metrics. This paper describes a novel visual tool, that applies interactive visualization principles to the multimedia expert concerns. Multiple coordinated views, augmented by interactive inspection facilities, ease the navigation in media annotations, and the visual detection of relevant information. The effectiveness of the proposition is demonstrated by experimental scenarios on a real multimedia corpus.},
 }
-
 
 chapter - fusion
 @inbook{Strat2014,
@@ -89,7 +81,50 @@ chapter - fusion
 # PUBLISHED
 # =============================================================================
 
+# Odyssey 2014
+@inproceedings{Bredin2014a,
+	Title = {{Person Instance Graphs for Named Speaker Identification in TV Broadcast}},
+	Author = {Herv{\'e} Bredin and Antoine Laurent and Achintya Sarkar and Viet-Bac Le and Sophie Rosset and Claude Barras},
+	Booktitle = {{Odyssey 2014, The Speaker and Language Recognition Workshop}},
+	Pages = {},
+	Year = {2014},
+	Month = {June},
+	Address = {Joensuu, Finland},
+	Abstract = {We address the problem of named speaker identification in TV broadcast which consists in answering the question ''who speaks when?'' with the real identity of speakers, using person names automatically obtained from speech transcripts. While existing approaches rely on a first speaker diarization step followed by a local name propagation step to speaker clusters, we propose a unified framework called person instance graph where both steps are jointly modeled as a global optimization problem, then solved using integer linear programming. Moreover, when available, acoustic speaker models can be added seamlessly to the graph structure for joint named and acoustic speaker identification - leading to a 10% error decrease (from 45% down to 35%) over a state-of-the-art i-vector speaker identification system on the REPERE TV broadcast corpus.},
+}
 
+
+LREC - TVD
+@inproceedings{Roy2014a,
+	Abstract = {We present a new dataset built around two TV series, The Big Bang Theory (a situation comedy) and Game of Thrones (a fantasy drama). It has multiple tracks including dialogue, crowd-sourced textual descriptions and metadata, all time-stamped and temporally aligned with each other. We provide tools to reproduce it for research purposes, provided that one has legally acquired the DVDs of the series. The alignment algorithm used is evaluated on a manually aligned subset of the data.},
+	Title = {{TVD: a Reproducible and Multiply Aligned TV Series Dataset}},
+	Author = {Anindya Roy and Camille Guinaudeau and Herv{\'e} Bredin and Claude Barras},
+	Booktitle = {{LREC 2014, 9th Language Resources and Evaluation Conference}},
+	Pages = {},
+	Year = {2014},
+	Month = {May},
+	Address = {Reykjavik, Iceland},
+}
+
+MMIR - PIG
+@article{Bredin2014,
+	Abstract = {This work introduces a unified framework for mono-, cross- and multi-modal person recognition in multimedia data. Dubbed Person Instance Graph, it models the person recognition task as a graph mining problem: i.e. finding the best mapping between person instance vertices and identity vertices. Practically, we describe how the approach can be applied to speaker identification in TV broadcast. Then, a solution to the above-mentioned mapping problem is proposed. It relies on Integer Linear Programming to model the problem of clustering person instances based on their identity. We provide an in-depth theoretical definition of the optimization problem. Moreover, we improve two fundamental aspects of our previous related work: the problem constraints and the optimized objective function. Finally, a thorough experimental evaluation of the proposed framework is performed on a publicly available benchmark database. Depending on the graph configuration (i.e. the choice of its vertices and edges), we show that multiple tasks can be addressed interchangeably (e.g. speaker diarization, supervised or unsupervised speaker identification), significantly outperforming state-of-the-art mono-modal approaches.},
+	Author = {Herv\'{e} Bredin and Anindya Roy and Viet-Bac Le and Claude Barras},
+	Journal = {International Journal of Multimedia Information Retrieval},
+	Publisher = {Springer-Verlag},
+	Title = {{Person Instance Graphs for Mono-, Cross- and Multi-Modal Person Recognition in Multimedia Data. Application to Speaker Identification in TV Broadcast}},
+	Year = {2014},
+}
+
+
+MTAP - Lexical SID
+@article{Roy2014,
+	Abstract = {It is possible to use lexical information extracted from speech transcripts for speaker identification (SID), either on its own or to improve the performance of standard cepstral-based SID systems upon fusion. This was established before typically using isolated speech from single speakers (NIST SRE corpora, parliamentary speeches). On the contrary, this work applies lexical approaches for SID on a different type of data. It uses the REPERE corpus consisting of unsegmented multiparty conversations, mostly debates, discussions and Q&A sessions from TV shows. It is hypothesized that people give out clues to their identity when speaking in such settings which this work aims to exploit. The impact on SID performance of the diarization front-end required to pre-process the unsegmented data is also measured. Four lexical SID approaches are studied in this work, including TFIDF, BM25 and LDA-based topic modeling. Results are analysed in terms of TV shows and speaker roles. Lexical approaches achieve low error rates for certain speaker roles such as anchors and journalists, sometimes lower than a standard cepstral-based Gaussian Supervector -- Support Vector Machine (GSV-SVM) system. Also, in certain cases, the lexical system shows modest improvement over the cepstral-based system performance using score-level sum fusion. To highlight the potential of using lexical information not just to improve upon cepstral-based SID systems but as an independent approach in its own right, initial studies on crossmedia SID is briefly reported. Instead of using speech data as all cepstral systems require, this approach uses Wikipedia texts to train lexical speaker models which are then tested on speech transcripts to identify speakers.},
+	Author = {Anindya Roy and Herv\'{e} Bredin and William Hartmann and Viet-Bac Le and Claude Barras and Jean-Luc Gauvain},
+	Journal = {{Multimedia Tools and Applications}},
+	Title = {{Lexical Speaker Identification in TV Shows}},
+	Year = {2014},
+}
 
 # ======= 2012-09 --> 2013-08 =================================================
 
