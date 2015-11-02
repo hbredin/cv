@@ -9,16 +9,24 @@ clean:
 	rm -f *.pyc
 	rm -f *fdb_latexmk
 
-pdf:
+publications:
 	python publi.py --english
 	latexmk -f -pdf publi_EN
 	python publi.py --francais
 	latexmk -f -pdf publi_FR
 
+contributions:
+	python publi.py --english --software
+	latexmk -f -pdf publi_EN
+	mv publi_EN.pdf contributions_EN.pdf
+	python publi.py --francais --software
+	latexmk -f -pdf publi_FR
+	mv publi_FR.pdf contributions_FR.pdf
+
 show:
 	open publi_EN.pdf
 	open publi_FR.pdf
-	
-all: clean pdf show
-	
+	open contributions_EN.pdf
+	open contributions_FR.pdf
 
+all: clean contributions publications show

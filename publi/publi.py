@@ -42,7 +42,7 @@ else:
               'inbook': "Chapitres d'ouvrages",
               'phdthesis': "Th\`{e}se",
               'wtf': "Autres publications"}
-    
+
 subpapers['wtf'] = [paper.key for paper in papers if paper.btype not in order]
 order.append('wtf')
 
@@ -75,7 +75,10 @@ f.write('\\texttt{\small bredin@limsi.fr}\\\\\n')
 f.write('\\texttt{\small http://herve.niderb.fr/}\n')
 f.write('}\n')
 
-f.write("\\title{Herv\\'{e} Bredin -- Publications}\n")
+if args.software:
+    f.write("\\title{Herv\\'{e} Bredin -- Contributions}\n")
+else:
+    f.write("\\title{Herv\\'{e} Bredin -- Publications}\n")
 
 f.write('\\maketitle\n')
 
@@ -108,4 +111,3 @@ if args.software:
 f.write('\\end{document}\n')
 
 f.close()
-
