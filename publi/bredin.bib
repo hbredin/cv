@@ -41,6 +41,60 @@ inbook{TemplateChapter,
 
 # ======= 2016-09 --> 2017-08 =================================================
 
+# InterSpeech 2017 (pyannote.metrics)
+@inproceedings{Bredin2017a,
+  Abstract = {pyannote.metrics is an open-source Python library aimed at researchers working in the wide area of speaker diarization. It provides a command line interface (CLI) to improve reproducibility and comparison of speaker diarization research results. Through its application programming interface (API), a large set of evaluation metrics is available for diagnostic purposes of all modules of typical speaker diarization pipelines (speech activity detection, speaker change detection, clustering, and identification). Finally, thanks to visualization capabilities, we show that it can also be used for detailed error analysis purposes. pyannote.metrics can be downloaded from http://pyannote.github.io/pyannote-metrics.},
+  Author = {Herv\'e Bredin},
+  Title = {{pyannote.metrics: a toolkit for reproducible evaluation, diagnostic, and error analysis of speaker diarization systems}},
+  Booktitle = {{Interspeech 2017, 18th Annual Conference of the International Speech Communication Association}},
+  Year = {2017},
+  Month = {August},
+  Address = {Stockholm, Sweden},
+  url = {http://pyannote.github.io/pyannote-metrics},
+}
+
+# InterSpeech 2017 (low-latency speaker diarization)
+@inproceedings{Wisniewski2017,
+  Abstract = {Real-time speaker diarization has many potential applications, including public security, biometrics or forensics.  It can also significantly speed up the indexing of increasingly large multimedia archives.  In this paper, we address the issue of low-latency speaker diarization that consists in continuously detecting new or reoccurring speakers within an audio stream, and determining when each speaker is active with a low latency (e.g. every second). This is in contrast with most existing approaches in speaker diarization that rely on multiple passes over the complete audio recording.  The proposed approach combines speaker turn neural embeddings with an incremental structure prediction approach inspired by state-of-the-art Natural Language Processing models for Part-of-Speech tagging and dependency parsing.  It can therefore leverage both information describing the utterance and the inherent temporal structure of interactions between speakers to learn, in supervised framework, to identify speakers.  Experiments on the Etape broadcast news benchmark validate the approach.},
+  Author = {Guillaume Wisniewski and Herv\'e Bredin and Gr\'{e}gory Gelly and Claude Barras},
+  Title = {{Combining Speaker Turn Embedding and Incremental Structure Prediction for Low-Latency Speaker Diarization}},
+  Booktitle = {{Interspeech 2017, 18th Annual Conference of the International Speech Communication Association}},
+  Year = {2017},
+  Month = {August},
+  Address = {Stockholm, Sweden}
+}
+
+# InterSpeech 2017 (low-latency speaker diarization)
+@inproceedings{Yin2017,
+  Abstract = {Speaker change detection is an important step in a speaker diarization system. It aims at finding speaker change points in the audio stream. In this paper, it is treated as a sequence labeling task and addressed by Bidirectional long short term memory networks (Bi-LSTM). The system is trained and evaluated on the Broadcast TV subset from ETAPE database. The result shows that the proposed model brings good improvement over conventional methods based on BIC and Gaussian Divergence. For instance, in comparison to Gaussian divergence, it produces speech turns that are 19.5% longer on average, with the same level of purity.},
+  Author = {Ruiqing Yin and Herv\'e Bredin and Claude Barras},
+  Title = {{Speaker Change Detection in Broadcast TV using Bidirectional Long Short-Term Memory Networks}},
+  Booktitle = {{Interspeech 2017, 18th Annual Conference of the International Speech Communication Association}},
+  Year = {2017},
+  Month = {August},
+  Address = {Stockholm, Sweden}
+}
+
+# CBMI
+@inproceedings{Le2017,
+  Abstract = {The rapid growth of multimedia databases and the human interest in their peers make indices representing the location and identity of people in audio-visual documents essential for searching archives. Person discovery in the absence of prior identity knowledge requires accurate association of audio-visual cues and detected names. To this end, we present 3 different strategies to approach this problem: clustering-based naming, verification-based naming, and graph-based naming. Each of these strategies utilizes different recent advances in unsupervised face / speech representation, verification, and optimization. To have a better understanding of the approaches, this paper also provides a quantitative and qualitative comparative study of these approaches using the associated corpus of the Person Discovery challenge at MediaEval 2016. From the results of our experiments, we can observe the pros and cons of each approach, thus paving the way for future promising research directions.},
+  Author = {Nam Le and Herv\'{e} Bredin and Gabriel Sargent and Miquel India and Paula Lopez-Otero and Claude Barras and Camille Guinaudeau and Guillaume Gravier and Gabriel Barbosa da Fonseca and  Izabela Lyon Freire and Zenilton Patroc\'{i}nio Jr and Silvio Jamil F. Guimar\~{a}es and Gerard Mart\'{i} and Josep Ramon Morros and Javier Hernando and Laura Docio-Fernandez and Carmen Garcia-Mateo and Sylvain Meignier and Jean-Marc Odobez},
+  Title = {{Towards Large Scale Multimedia Indexing: a Case Study on Person Discovery in Broadcast News}},
+  Booktitle = {{CBMI 2017, 15th International Workshop on Content-Based Multimedia Indexing}},
+  Year = {2017},
+  Month = {June},
+  Address = {Firenze, Italy}
+}
+
+# MTAP - MediaEval Person Discovery
+@article{Poignant2017,
+	Abstract = {We describe the ``Multimodal Person Discovery in Broadcast TV'' task of MediaEval 2015 benchmarking initiative. Participants were asked to return the names of people who can be both seen as well as heard in every shot of a collection of videos. The list of people was not known a priori and their names had to be discovered in an unsupervised way from media content using text overlay or speech transcripts. The task was evaluated using information retrieval metrics, based on a posteriori collaborative annotation of the test corpus. The first edition of the task gathered 9 teams which submitted 34 runs. This paper provides quantitative and qualitative comparisons of participants submissions. We also investigate why all systems failed for particular shots, paving the way for future promising research directions.},
+	Author = {Johann Poignant and Herv\'{e} Bredin and Claude Barras},
+	Journal = {{Multimedia Tools and Applications}},
+	Title = {{Multimodal Person Discovery in Broadcast TV: Lessons Learned from MediaEval 2015}},
+	Year = {2017},
+}
+
 # IEEE ICASSP 2017
 @inproceedings{Bredin2017,
   Abstract = {TristouNet is a neural network architecture based on Long Short-Term Memory recurrent networks, meant to project speech sequences into a fixed-dimensional euclidean space. Thanks to the triplet loss paradigm used for training, the resulting sequence embeddings can be compared directly with the euclidean distance, for speaker comparison purposes. Experiments on short (between 500ms and 5s) speech turn comparison and speaker change detection show that TristouNet brings significant improvements over the current state-of-the-art techniques for both tasks.},
@@ -63,6 +117,17 @@ inbook{TemplateChapter,
 	Address = {San Jose, USA},
 }
 
+# MediaEval 2016
+@inproceedings{Bredin2016a,
+	Abstract = {We describe the ``Multimodal Person Discovery in Broadcast TV'' task of MediaEval 2016 benchmarking initiative. Participants are asked to return the names of people who can be both seen as well as heard in every shot of a collection of videos. The list of people is not known a priori and their names has to be discovered in an unsupervised way from media content using text overlay or speech transcripts for the primary runs. The task is evaluated using information retrieval metrics, based on a posteriori collaborative annotation of the test corpus.},
+	Title = {{Multimodal Person Discovery in Broadcast TV at MediaEval 2016}},
+	Author = {Herv\'{e} Bredin and Claude Barras and Camille Guinaudeau},
+	Booktitle = {MediaEval 2016},
+	Year = {2016},
+	Month = {October},
+	Address = {Hilversum, The Netherlands},
+	}
+
 # ACM MM 2016
 @inproceedings{Bredin2016,
 	Abstract = {While successful on broadcast news, meetings or telephone conversation, state-of-the-art speaker diarization techniques tend to perform poorly on TV series or movies. In this paper, we propose to rely on state-of-the-art face clustering techniques to guide acoustic speaker diarization. Two approaches are tested and evaluated on the first season of Game Of Thrones TV series. The second (better) approach relies on a novel talking-face detection module based on bi-directional long short-term memory recurrent neural network. Both audio-visual approaches outperform the audio-only baseline. A detailed study of the behavior of these approaches is also provided and paves the way to future improvements.},
@@ -81,7 +146,7 @@ inbook{TemplateChapter,
   Author = {Johann Poignant and Herv\'{e} Bredin and Claude Barras and Micka{\"e}l Stefas and Pierrick Bruneau and Thomas Tamisier},
   Title = {{Benchmarking multimedia technologies with the CAMOMILE platform: the case of Multimodal Person Discovery at MediaEval 2015}},
   Abstract = {In this paper, we claim that the CAMOMILE collaborative annotation platform (developed in the framework of the eponymous CHIST-ERA project) eases the organization of multimedia technology benchmarks, automating most of the campaign technical workflow and enabling collaborative (hence faster and cheaper) annotation of the evaluation data. This is demonstrated through the successful organization of a new multimedia task at MediaEval 2015, Multimodal Person Discovery in Broadcast TV.},
-  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+  Booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
   Year = {2016},
   Month = {may},
   Date = {23-28},
@@ -98,7 +163,7 @@ inbook{TemplateChapter,
   Author = {Johann Poignant and Mateusz Budnik and Herv\'{e} Bredin and Claude Barras and Micka{\"e}l Stefas and Pierrick Bruneau and Gilles Adda and Laurent Besacier and Hazim Ekenel and Gil Francopoulo and Javier Hernando and Joseph Mariani and Ramon Morros and Georges Qu\'{e}not and Sophie Rosset and Thomas Tamisier},
   Abstract = {In this paper, we describe the organization and the implementation of the CAMOMILE collaborative annotation framework for multimodal, multimedia, multilingual (3M) data. Given the versatile nature of the analysis which can be performed on 3M data, the structure of the server was kept intentionally simple in order to preserve its genericity, relying on standard Web technologies. Layers of annotations, defined as data associated to a media fragment from the corpus, are stored in a database and can be managed through standard interfaces with authentication. Interfaces tailored specifically to the needed task can then be developed in an agile way, relying on simple but reliable services for the management of the centralized annotations. We then present our implementation of an active learning scenario for person annotation in video, relying on the CAMOMILE server; during a dry run experiment, the manual annotation of 716 speech segments was thus propagated to 3504 labeled tracks. The code of the CAMOMILE framework is distributed in open source.},
   Title = {{The CAMOMILE Collaborative Annotation Platform for Multi-modal, Multi-lingual and Multi-media Documents}},
-  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+  Booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
   Year = {2016},
   Month = {may},
   Date = {23-28},
