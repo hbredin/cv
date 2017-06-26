@@ -76,7 +76,10 @@ f.write('\\texttt{\small http://herve.niderb.fr/}\n')
 f.write('}\n')
 
 if args.software:
-    f.write("\\title{Herv\\'{e} Bredin -- Contributions}\n")
+    if args.english:
+        f.write("\\title{Herv\\'{e} Bredin -- Scientific contributions}\n")
+    else:
+        f.write("\\title{Herv\\'{e} Bredin -- Contributions scientifiques}\n")        
 else:
     f.write("\\title{Herv\\'{e} Bredin -- Publications}\n")
 
